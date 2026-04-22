@@ -3,17 +3,22 @@ Qualtrics.SurveyEngine.addOnReady(function () {
     var packaging = "${lm://Field/7}";
     var base = "https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/";
 
-    var filename;
-    if (packaging === "Closed container") {
-        filename = "closed-container.png";
-    } else {
-        var map = {
-            "Sandwich + Water": "sandwich-water.png",
-            "Sandwich + Coffee": "sandwich-coffee.png",
-            "Sandwich + Coffee + Fruit": "sandwich-coffee-fruit.png"
-        };
-        filename = map[composition];
-    }
+    var openMap = {
+        "Sandwich + Water": "sandwich-water.png",
+        "Sandwich + Coffee": "sandwich-coffee.png",
+        "Sandwich + Coffee + Fruit": "sandwich-coffee-fruit.png"
+    };
+    // Closed container hides sandwich (and fruit, which fits inside). Drink
+    // sits next to the container, so we still vary by coffee vs water.
+    var closedMap = {
+        "Sandwich + Water": "closed-container-water.png",
+        "Sandwich + Coffee": "closed-container-coffee.png",
+        "Sandwich + Coffee + Fruit": "closed-container-coffee.png"
+    };
+
+    var filename = packaging === "Closed container"
+        ? closedMap[composition]
+        : openMap[composition];
 
     if (!filename) {
         return;
@@ -30,7 +35,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 
     var img = document.createElement("img");
     img.src = base + filename;
-    img.alt = packaging === "Closed container" ? "Closed container" : composition;
+    img.alt = composition + " (" + packaging + ")";
     img.style.cssText = "max-width:320px;display:block;margin:0 auto 16px;";
     qText.insertBefore(img, qText.firstChild);
 });

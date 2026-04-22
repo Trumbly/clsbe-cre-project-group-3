@@ -46,13 +46,20 @@ Both are wired into the respective pressure branches in the Survey Flow.
 
    The image URL is **not** a CSV column — it is injected at runtime by
    `javascript/inject-composition-image.js`, which picks the PNG based on two
-   fields:
-   - If Field 7 (`Packaging`) is `Closed container` → always `closed-container.png`
-     (contents are hidden, so composition does not matter visually).
-   - Otherwise (`Open tray`) → Field 4 (`Composition`) maps to one of
-     `sandwich-water.png`, `sandwich-coffee.png`, `sandwich-coffee-fruit.png`.
-   Keeping URLs out of the CSV avoids redundant storage and keeps the Qualtrics
-   L&M grid fast to save.
+   fields (Field 4 = Composition, Field 7 = Packaging):
+
+   | Packaging | Composition | Image |
+   |---|---|---|
+   | Open tray | Sandwich + Water | `sandwich-water.png` |
+   | Open tray | Sandwich + Coffee | `sandwich-coffee.png` |
+   | Open tray | Sandwich + Coffee + Fruit | `sandwich-coffee-fruit.png` |
+   | Closed container | Sandwich + Water | `closed-container-water.png` |
+   | Closed container | Sandwich + Coffee | `closed-container-coffee.png` |
+   | Closed container | Sandwich + Coffee + Fruit | `closed-container-coffee.png` |
+
+   (Fruit fits inside the closed container, so the two coffee variants share
+   one image.) Keeping URLs out of the CSV avoids redundant storage and keeps
+   the Qualtrics L&M grid fast to save.
 5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
    respondent in random order.
 6. **Present only:** 12 (of 288).

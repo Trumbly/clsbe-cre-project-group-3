@@ -4,10 +4,10 @@
     "SurveyName": "CLSBE-CRE-Group3-BundleFraming-2026",
     "SurveyDescription": "CLSBE CRE Group 3 — Bundle/Framing study, 2026",
     "SurveyOwnerID": "UR_CLSBECREGROUP03",
-    "SurveyBrandID": null,
+    "SurveyBrandID": "",
     "DivisionID": null,
     "SurveyLanguage": "EN",
-    "SurveyActiveResponseSet": "RS_default",
+    "SurveyActiveResponseSet": "RS_CLSBECREGROUP03",
     "SurveyStatus": "Inactive",
     "SurveyStartDate": "0000-00-00 00:00:00",
     "SurveyExpirationDate": "0000-00-00 00:00:00",
@@ -37,7 +37,7 @@
               "QuestionID": "QID1"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -61,28 +61,28 @@
               "QuestionID": "QID3"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID4"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID5"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID6"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -106,7 +106,7 @@
               "QuestionID": "QID8"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -130,7 +130,7 @@
               "QuestionID": "QID10"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -157,8 +157,7 @@
           "Options": {
             "BlockLocking": "false",
             "RandomizeQuestions": "false",
-            "BlockVisibility": "Collapsed",
-            "BackButton": "false"
+            "BlockVisibility": "Collapsed"
           }
         },
         {
@@ -175,8 +174,7 @@
           "Options": {
             "BlockLocking": "false",
             "RandomizeQuestions": "false",
-            "BlockVisibility": "Collapsed",
-            "BackButton": "false"
+            "BlockVisibility": "Collapsed"
           }
         },
         {
@@ -190,21 +188,21 @@
               "QuestionID": "QID14"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID15"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID16"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -228,28 +226,28 @@
               "QuestionID": "QID18"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID19"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID20"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID21"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -273,14 +271,14 @@
               "QuestionID": "QID23"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
               "QuestionID": "QID24"
             },
             {
-              "Type": "PageBreak"
+              "Type": "Page Break"
             },
             {
               "Type": "Question",
@@ -473,10 +471,9 @@
                 "0": {
                   "LogicType": "Question",
                   "QuestionID": "QID2",
-                  "QuestionIsInPage": "0",
+                  "QuestionIDFromLocator": "QID2",
                   "ChoiceLocator": "q://QID2/SelectableChoice/2",
                   "Operator": "Selected",
-                  "QuestionIDFromLocator": "QID2",
                   "LeftOperand": "q://QID2/SelectableChoice/2",
                   "Type": "Expression",
                   "Description": "Selected \"No, I do not consent.\""
@@ -646,9 +643,9 @@
         "ValidationMessage": "",
         "PreviousButton": " ← ",
         "NextButton": " → ",
-        "SkinLibrary": null,
+        "SkinLibrary": "",
         "SkinType": "MQ",
-        "Skin": null,
+        "Skin": "",
         "NewScoring": 1,
         "AnonymizeResponse": "Yes"
       }
@@ -656,7 +653,7 @@
     {
       "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SCO",
-      "PrimaryAttribute": "Survey Scoring",
+      "PrimaryAttribute": "Scoring",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": {
@@ -693,7 +690,7 @@
     {
       "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "QC",
-      "PrimaryAttribute": "QuestionCount",
+      "PrimaryAttribute": "Survey Question Count",
       "SecondaryAttribute": "25",
       "TertiaryAttribute": null,
       "Payload": null
@@ -701,18 +698,10 @@
     {
       "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "RS",
-      "PrimaryAttribute": "RS_default",
+      "PrimaryAttribute": "RS_CLSBECREGROUP03",
       "SecondaryAttribute": "Default Response Set",
       "TertiaryAttribute": null,
       "Payload": null
-    },
-    {
-      "SurveyID": "SV_CLSBECREGROUP03",
-      "Element": "SE",
-      "PrimaryAttribute": "SurveyEndMessages",
-      "SecondaryAttribute": null,
-      "TertiaryAttribute": null,
-      "Payload": {}
     },
     {
       "SurveyID": "SV_CLSBECREGROUP03",
@@ -1430,8 +1419,9 @@
         "Validation": {
           "Settings": {
             "ForceResponse": "OFF",
-            "Type": "MaxCharacters",
-            "MaxChars": "500"
+            "Type": "CharRange",
+            "MaxChars": "500",
+            "MinChars": "0"
           }
         },
         "Language": [],
@@ -1845,7 +1835,7 @@
           "Settings": {
             "ForceResponse": "OFF",
             "Type": "ContentType",
-            "ContentType": "Email"
+            "ContentType": "ValidEmail"
           }
         },
         "Language": [],

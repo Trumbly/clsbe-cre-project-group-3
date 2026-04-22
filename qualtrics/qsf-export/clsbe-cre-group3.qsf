@@ -1,10 +1,10 @@
 {
   "SurveyEntry": {
-    "SurveyID": "SV_clsbe_cre_group3",
+    "SurveyID": "SV_CLSBECREGROUP03",
     "SurveyName": "CLSBE-CRE-Group3-BundleFraming-2026",
     "SurveyDescription": "CLSBE CRE Group 3 — Bundle/Framing study, 2026",
-    "SurveyOwnerID": "UR_CLSBE",
-    "SurveyBrandID": "clsbe",
+    "SurveyOwnerID": "UR_CLSBECREGROUP03",
+    "SurveyBrandID": null,
     "DivisionID": null,
     "SurveyLanguage": "EN",
     "SurveyActiveResponseSet": "RS_default",
@@ -12,7 +12,7 @@
     "SurveyStartDate": "0000-00-00 00:00:00",
     "SurveyExpirationDate": "0000-00-00 00:00:00",
     "SurveyCreationDate": "2026-04-22 11:44:00",
-    "CreatorID": "UR_CLSBE",
+    "CreatorID": "UR_CLSBECREGROUP03",
     "LastModified": "2026-04-22 11:44:00",
     "LastAccessed": "0000-00-00 00:00:00",
     "LastActivated": "0000-00-00 00:00:00",
@@ -20,7 +20,7 @@
   },
   "SurveyElements": [
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "BL",
       "PrimaryAttribute": "Survey Blocks",
       "SecondaryAttribute": null,
@@ -302,7 +302,7 @@
       ]
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "FL",
       "PrimaryAttribute": "Survey Flow",
       "SecondaryAttribute": null,
@@ -489,13 +489,10 @@
               {
                 "Type": "EndSurvey",
                 "FlowID": "FL_4",
-                "EndingType": "Advanced",
+                "EndingType": "Default",
                 "Options": {
-                  "Advanced": "true",
-                  "SurveyTermination": "DisplayMessage",
-                  "EOSMessage": "MS_consent_decline",
-                  "EOSMessageLibrary": "UR_CLSBE",
-                  "EOSRedirectURL": ""
+                  "Advanced": "false",
+                  "SurveyTermination": "DefaultMessage"
                 }
               }
             ]
@@ -615,9 +612,8 @@
             "FlowID": "FL_18",
             "EndingType": "Default",
             "Options": {
-              "Advanced": "true",
-              "SurveyTermination": "DisplayMessage",
-              "EOSMessage": "MS_thanks"
+              "Advanced": "false",
+              "SurveyTermination": "DefaultMessage"
             }
           }
         ],
@@ -629,7 +625,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SO",
       "PrimaryAttribute": "Survey Options",
       "SecondaryAttribute": null,
@@ -650,15 +646,15 @@
         "ValidationMessage": "",
         "PreviousButton": " ← ",
         "NextButton": " → ",
-        "SkinLibrary": "clsbe",
+        "SkinLibrary": null,
         "SkinType": "MQ",
-        "Skin": "clsbe_default",
+        "Skin": null,
         "NewScoring": 1,
         "AnonymizeResponse": "Yes"
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SCO",
       "PrimaryAttribute": "Survey Scoring",
       "SecondaryAttribute": null,
@@ -673,7 +669,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "PROJ",
       "PrimaryAttribute": "CORE",
       "SecondaryAttribute": null,
@@ -684,7 +680,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "STAT",
       "PrimaryAttribute": "SurveyStats",
       "SecondaryAttribute": null,
@@ -695,7 +691,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "QC",
       "PrimaryAttribute": "QuestionCount",
       "SecondaryAttribute": "25",
@@ -703,7 +699,7 @@
       "Payload": null
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "RS",
       "PrimaryAttribute": "RS_default",
       "SecondaryAttribute": "Default Response Set",
@@ -711,24 +707,15 @@
       "Payload": null
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SE",
       "PrimaryAttribute": "SurveyEndMessages",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
-      "Payload": {
-        "MS_consent_decline": {
-          "descr": "Consent declined",
-          "Message": "Thank you. Your response has not been recorded."
-        },
-        "MS_thanks": {
-          "descr": "Completion thanks",
-          "Message": "Thank you — you're entered. Have a good lunch!"
-        }
-      }
+      "Payload": {}
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID1",
       "SecondaryAttribute": "",
@@ -754,7 +741,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID2",
       "SecondaryAttribute": "",
@@ -795,7 +782,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID3",
       "SecondaryAttribute": "",
@@ -870,7 +857,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID4",
       "SecondaryAttribute": "",
@@ -902,7 +889,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID5",
       "SecondaryAttribute": "",
@@ -959,7 +946,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID6",
       "SecondaryAttribute": "",
@@ -1037,7 +1024,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID7",
       "SecondaryAttribute": "",
@@ -1098,7 +1085,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID8",
       "SecondaryAttribute": "",
@@ -1124,7 +1111,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID9",
       "SecondaryAttribute": "",
@@ -1150,7 +1137,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID10",
       "SecondaryAttribute": "",
@@ -1176,7 +1163,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID11",
       "SecondaryAttribute": "",
@@ -1202,7 +1189,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID12",
       "SecondaryAttribute": "",
@@ -1228,7 +1215,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID13",
       "SecondaryAttribute": "",
@@ -1254,7 +1241,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID14",
       "SecondaryAttribute": "",
@@ -1324,7 +1311,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID15",
       "SecondaryAttribute": "",
@@ -1356,7 +1343,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID16",
       "SecondaryAttribute": "",
@@ -1426,7 +1413,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID17",
       "SecondaryAttribute": "",
@@ -1453,7 +1440,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID18",
       "SecondaryAttribute": "",
@@ -1508,7 +1495,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID19",
       "SecondaryAttribute": "",
@@ -1569,7 +1556,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID20",
       "SecondaryAttribute": "",
@@ -1634,7 +1621,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID21",
       "SecondaryAttribute": "",
@@ -1683,7 +1670,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID22",
       "SecondaryAttribute": "",
@@ -1744,7 +1731,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID23",
       "SecondaryAttribute": "",
@@ -1814,7 +1801,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID24",
       "SecondaryAttribute": "",
@@ -1840,7 +1827,7 @@
       }
     },
     {
-      "SurveyID": "SV_clsbe_cre_group3",
+      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "SQ",
       "PrimaryAttribute": "QID25",
       "SecondaryAttribute": "",

@@ -1,0 +1,411 @@
+---
+title: "The Bundle Effect in Campus Food Service: A Rating-Based Conjoint Experiment on Format, Label Framing, Composition, and Price — Moderated by Time Pressure"
+subtitle: "Causality and Randomized Experiments — Spring 2026 — Project Proposal"
+author:
+  - Maximilian Noelle-Wying
+  - Carmen [Last name]
+  - Tiago [Last name]
+  - Lorena [Last name]
+  - Rahul [Last name]
+date: today
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    geometry: margin=2.5cm
+    fontsize: 11pt
+    colorlinks: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                      fig.align = "center", fig.width = 6, fig.height = 4)
+library(tidyverse)
+# Core packages for rating-based conjoint analysis (loaded in analysis phase):
+# library(lme4)       # mixed-effects models with respondent random intercepts
+# library(lmerTest)   # p-values via Satterthwaite for lme4
+# library(marginaleffects)  # AMCE-style marginal effects & contrasts
+# library(emmeans)    # estimated marginal means, interaction decomposition
+```
+
+# Introduction
+
+Campus food service operators face a recurring pricing and merchandising decision: should meal items be sold individually, or bundled as "meal deals"? And if bundled, how should the offer be framed? While bundling is a well-studied phenomenon in marketing [@yadav1994; @estelami1999], its interaction with verbal framing — generic versus benefit-oriented labels — remains underexplored, particularly in captive-audience food environments such as university cafeterias.
+
+This project investigates how four focal attributes of a campus meal offering jointly affect student preferences and willingness to pay: **bundling format** (bundle vs. separate items), **label framing** (no label vs. generic vs. benefit-oriented), **meal composition**, and **price**. We estimate causal effects using a **rating-based conjoint experiment**: each respondent rates a series of randomly generated meal profiles on a 1–7 appeal scale, allowing us to recover attribute-level part-worths under random assignment [@rao2014; @hainmueller2014]. Two **filler attributes** (pickup speed, packaging) are included to reduce demand effects and increase task realism without being of theoretical interest.
+
+We additionally introduce a between-subjects moderator — **time pressure** — to test whether the effects of our focal attributes shift under cognitive load. In real cafeterias, lunch decisions are frequently made under time constraints (queue pressure, limited breaks), and dual-process theory [@petty1986; @chaiken1980] predicts that under pressure respondents rely more on peripheral cues such as salient labels and bundle framings. Half of our sample rates profiles with a visible countdown timer; the other half has no timer.
+
+Our setting — the Católica-Lisbon School of Business and Economics (CLSBE) campus — provides an immediately applicable context. The results speak directly to whether and how a cafeteria operator can use bundling and framing as low-cost levers to influence choice and capture higher willingness to pay, with implications for revenue, food waste, and student satisfaction.
+
+## Research Question
+
+> *How do bundling format, label framing, meal composition, and price jointly shape students' appeal ratings and willingness to pay for campus meals, and does time pressure moderate these effects?*
+
+## Contribution
+
+We extend prior bundle-effect research in four ways: (i) by applying a causal rating-based conjoint design rather than a single-factor between-subjects study, allowing us to estimate multiple effects simultaneously and derive revealed-preference WTP; (ii) by testing a three-level label manipulation (no label vs. generic vs. benefit-oriented) that separates the pure signaling effect of a label from its framing content; (iii) by introducing time pressure as a between-subjects moderator to test whether heuristic processing amplifies peripheral cues — a test rarely conducted in conjoint studies despite its theoretical and managerial relevance; and (iv) by situating the study in a realistic decision environment directly relevant to the target population.
+
+# Theoretical Background and Literature Review
+
+## The Bundle Effect
+
+Product bundling — the practice of selling two or more separate items together for a single price — is one of the most enduring topics in marketing and pricing research. @yadav1994 showed that consumers evaluate bundles using an anchoring-and-adjustment process, weighting the most important item most heavily. @estelami1999 provided a meta-analytic overview establishing that bundle discounts typically increase transaction utility relative to separately priced items, though the magnitude varies substantially with context. More recent work confirms bundling's effect on perceived value but also documents boundary conditions: bundles can reduce consumption enjoyment [@khan2004] and may backfire when components are seen as low-fit [@harris2002].
+
+## Label and Framing Effects
+
+The marketing literature has long documented that verbal framing influences evaluation even when objective content is held constant [@levin1998]. In food and menu contexts, specifically, descriptive and benefit-oriented labels raise purchase intent, perceived taste, and willingness to pay [@wansink2005; @irmak2011]. Our design introduces a novel three-level comparison: no label, a generic categorical label ("Menu Deal"), and a benefit-oriented label ("Student Fuel"). This allows us to separate the effect of *any* label from the effect of label *content*.
+
+## Conjoint Analysis as Causal Inference
+
+Classical conjoint analysis, developed in mathematical psychology [@luce1964] and marketing [@green1971], measures respondent preferences across multi-attribute stimuli. @hainmueller2014 reformulated conjoint as a causal design: when attribute levels are fully randomized, attribute-level coefficients identify well-defined causal effects under stability, randomization, and no-carryover assumptions. Their framework was developed for choice-based conjoint, but the identification logic transfers directly to rating-based designs [@rao2014], provided the same randomization conditions hold. In a rating-based conjoint, the causal estimand is the average effect of an attribute level on the rating outcome, typically recovered from a linear mixed-effects model with respondent random intercepts.
+
+Rating-based conjoint offers several practical advantages for this project: (i) it is analytically simpler than discrete-choice models while remaining causally identified; (ii) each respondent contributes more observations (one rating per profile rather than one choice per pair); (iii) it allows WTP derivation through the same coefficient-ratio logic used in CBC [@breidert2006]; and (iv) the rating outcome is continuous, which improves statistical power for interaction and heterogeneity tests.
+
+## Demand Effects and Filler Attributes
+
+A known threat to conjoint validity is the possibility that respondents infer the researcher's hypotheses and answer accordingly [@orme2010]. This is particularly relevant when the focal manipulation (here: bundle format, label framing) is salient. The conventional safeguard is to include **filler attributes** — additional attributes that are randomized alongside focal attributes but carry no theoretical weight. Fillers make the task feel more realistic, reduce hypothesis guessing, and dilute the perceptual salience of the focal manipulations. We include two filler attributes (pickup speed, packaging) in our design; they are reported transparently in the analysis but are not of substantive interest.
+
+## Time Pressure and Dual-Process Theory
+
+Under cognitive load, decision-makers shift from effortful (systematic/central) processing toward heuristic (peripheral) processing [@chaiken1980; @petty1986]. Empirically, time pressure has been shown to amplify the weight of peripheral cues — brand, visual salience, framing labels — relative to substantive product information [@dhar1999; @payne1988; @suri2003]. In the meal-choice context, a visible "Student Fuel" label or a "Menu Deal" badge functions as a heuristic cue: low cognitive effort to process, high perceived diagnosticity. We therefore predict that time pressure will amplify the AMCEs of label framing and bundle format, while dampening or leaving unchanged the effects of attributes that require more integrative evaluation (composition, price).
+
+# Hypotheses
+
+We formulate seven pre-registered hypotheses. Because our primary outcome is an appeal rating rather than a choice probability, effects are framed as shifts in the rating score on the 1–7 scale, while retaining AMCE terminology:
+
+- **H1 — Bundle format effect.** The bundle format has a positive effect on appeal ratings relative to separate items.
+- **H2a — Label presence effect.** Any label (generic or benefit-oriented) has a positive effect relative to no label.
+- **H2b — Label content effect.** The benefit-oriented label ("Student Fuel") has a positive effect relative to the generic label ("Menu Deal").
+- **H3 — Price effect.** Price has a negative, monotonically decreasing effect on ratings — a sanity check and the denominator for WTP estimation.
+- **H4 — Composition effect.** Richer compositions (e.g., sandwich + coffee + fruit) have positive effects relative to minimal compositions (sandwich + water), with diminishing returns.
+- **H5 — Bundle × Label interaction.** The bundle effect is amplified when paired with a benefit-oriented label, because the label provides a coherent narrative that justifies the bundle.
+- **H6 — Heterogeneous treatment effects.** The bundle and label effects are moderated by price sensitivity and cafeteria usage frequency. Price-sensitive students show larger bundle effects; frequent cafeteria users show larger label effects.
+- **H7 — Time pressure moderation.** Under high time pressure, respondents rely more on peripheral cues. The label and bundle effects are therefore amplified in the high-pressure condition relative to the low-pressure condition, while the price effect is attenuated (because price evaluation requires more integrative processing than detection of a label badge or a "Menu Deal" frame).
+
+Filler attributes (pickup speed, packaging) are randomized but have no directional hypothesis; we report their coefficients for transparency but do not interpret them causally.
+
+# Experimental Design
+
+## Approach
+
+We implement a **rating-based conjoint experiment** with a **mixed design**: attribute levels are randomized at the profile level (within-subjects), and time pressure is randomized at the respondent level (between-subjects). On each rating task, respondents see one meal offer profile and rate its appeal on a 1–7 Likert scale. Attribute levels are drawn independently and uniformly at random for each profile, satisfying the identification assumptions of @hainmueller2014 and their rating-based adaptation [@rao2014]: randomization, no carryover, and stability.
+
+Each respondent rates **12 profiles**. Half of the sample is assigned to a **high-pressure condition** (visible countdown timer of 8 seconds per profile) and half to a **low-pressure condition** (no timer, self-paced). Pressure assignment is blocked by respondent — every respondent experiences either all high-pressure or all low-pressure tasks, preventing within-respondent carryover of the pressure manipulation.
+
+## Population and Sample
+
+**Target population.** Enrolled CLSBE students (undergraduate and graduate), the exact consumer base served by the campus cafeteria.
+
+**Sampling frame.** Convenience sample recruited via (i) CLSBE student WhatsApp and Telegram groups, (ii) course mailing lists (with instructor permission), (iii) in-person recruitment at high-traffic campus locations. We acknowledge this is not a probability sample, and we discuss implications for external validity in §8.
+
+**Target sample size.** n = 200 respondents (100 per time-pressure condition), yielding 2,400 total rating observations (12 profiles per respondent).
+
+## Attributes and Levels
+
+The design uses **four focal attributes** (of theoretical interest) and **two filler attributes** (included to reduce demand effects and increase realism, but not substantively interpreted):
+
+| Type | Attribute | Levels | Rationale |
+|---|---|---|---|
+| Focal | **Format** | Bundle / Separate items | Core manipulation (H1) |
+| Focal | **Label** | None / "Menu Deal" / "Student Fuel" | Tests label presence (H2a) and content (H2b) |
+| Focal | **Composition** | Sandwich + Water / Sandwich + Coffee / Sandwich + Coffee + Fruit | Realism and H4 |
+| Focal | **Price** | €3.50 / €4.50 / €5.50 / €6.50 | WTP estimation and H3 |
+| Filler | **Pickup speed** | Ready now / 2-minute wait | Realism, not of theoretical interest |
+| Filler | **Packaging** | Open tray / Closed container | Realism, not of theoretical interest |
+
+The full profile space is 2 × 3 × 3 × 4 × 2 × 2 = 288 unique profiles. Each respondent rates 12 profiles, drawn by independent random sampling from this space without replacement within-respondent.
+
+Between-subjects, each respondent is randomized with equal probability to the **high-pressure** or **low-pressure** condition, creating a 2 (pressure) × attribute-level design.
+
+## Rating Task Structure
+
+Each respondent begins with a brief instructional primer including a warm-up rating task (which is discarded from analysis). Respondents assigned to the high-pressure condition see the instruction *"To simulate a real cafeteria queue, please rate each option quickly. You will have a short countdown for each rating."* plus a visible 8-second timer in the upper right corner during each profile. Low-pressure respondents see the instruction *"Please take your time to evaluate each option carefully"* and no timer.
+
+After the primer, 12 rating tasks are presented sequentially. Each task shows a single meal profile as a visual card with clearly displayed attribute information (product image, label badge if any, composition text, pickup time, packaging, price). Respondents rate the appeal of the profile on a 1–7 Likert scale ("How appealing is this meal option?"). Profile order is randomized.
+
+Response time is recorded for each rating and retained as a secondary outcome and manipulation-check variable. For the high-pressure condition, a soft prompt appears if the 8-second timer expires without a response ("Please select quickly"), but the timer does not auto-advance — this avoids missing data while still creating psychological pressure. Pilot data will calibrate the exact timer duration.
+
+## Outcome Variables
+
+**Primary outcome:** Profile appeal rating (1–7 Likert) — the dependent variable in the main regression model.
+
+**Secondary outcomes (post-task survey):**
+
+- Open-ended maximum WTP for a self-composed "ideal" meal (€), used to validate the conjoint-derived WTP.
+- Realism check: "How realistic do these meal offers feel compared to options you might see in a real cafeteria?" (1–7).
+- Manipulation check for time pressure: self-reported experience of pressure (1–7, "I felt rushed when rating").
+
+**Process measures (captured automatically):**
+
+- Response time per profile (used in manipulation check and as a proxy for cognitive engagement).
+- Straightlining indicator (respondents giving identical ratings across ≥10 profiles — flagged for quality control).
+
+## Covariates
+
+**Pre-task block** (measured before the choice tasks to avoid contamination):
+
+- Hunger level (1–7 Likert).
+- Hours since last substantive meal.
+- Cafeteria usage frequency (days per week).
+- Price sensitivity — three-item scale adapted from @lichtenstein1993 (e.g., "I am willing to make an extra effort to find lower prices for lunch").
+- Dietary restrictions (screening for vegetarian/vegan profiles; used for subgroup analysis).
+
+**Post-task block:**
+
+- Gender, age, year of study, nationality, approximate monthly discretionary budget (ranges).
+- Attention check (instructed response).
+
+## Randomization Strategy
+
+Two independent randomizations are performed:
+
+**Profile-level (within-respondent):** All six attribute levels are drawn independently and with equal probability for each of the 12 profiles each respondent sees. No constraints are imposed other than within-respondent deduplication.
+
+**Respondent-level (between-subjects):** At survey entry, each respondent is assigned to high-pressure or low-pressure with equal probability via Qualtrics's randomizer element. Assignment is not disclosed to the respondent as a "condition" — only through the instruction wording and the timer.
+
+This mixed design supports unbiased estimation of both profile-level AMCEs and pressure-interacted AMCEs.
+
+## Sample Size and Power
+
+Power analysis for the rating-based design uses a linear mixed-effects framework with respondent random intercepts. Assuming:
+
+- Rating SD ≈ 1.5 on a 1–7 scale (based on Likert-item conventions).
+- Intra-class correlation (respondent-level clustering) ≈ 0.25.
+- Effective observations per respondent ≈ 12 / (1 + (12-1) × 0.25) ≈ 3.2 (design-effect adjusted).
+
+For **main effects** (H1–H4), 200 respondents × 12 tasks gives approximately 80% power to detect attribute-level effects of 0.30 rating-scale points (roughly Cohen's *d* = 0.20) at α = 0.05 — comfortably below typical bundle-effect magnitudes in the literature.
+
+For **H5 (Bundle × Label)** and **H7 (Time pressure moderation)**, interaction effects typically have half the power of main effects. At n = 200 (100 per pressure condition), we can detect interaction effects of approximately 0.50 rating-scale points with 80% power. This is adequate but not generous; we document this as a power limitation and note that H7 is the binding constraint.
+
+We therefore target **n = 200** with a stretch goal of **n = 240** to strengthen interaction-test power.
+
+```{r power-calc, eval=FALSE, echo=TRUE}
+# Illustrative power simulation for a rating-based conjoint with
+# time-pressure moderation. To be run with simr or a custom Monte Carlo.
+set.seed(42)
+n_respondents <- 200
+n_per_resp    <- 12
+total_N       <- n_respondents * n_per_resp
+cat("Total rating observations:", total_N, "\n")
+# Main-effect MDE (80% power, alpha = 0.05):  ~0.30 rating points
+# Interaction MDE (Pressure × Bundle):       ~0.50 rating points
+# Stretch goal n = 240 reduces interaction MDE to ~0.45 rating points.
+```
+
+## Pilot Study
+
+Before full deployment we will run a small pilot (n ≈ 20, CLSBE students, split evenly across pressure conditions) to:
+
+1. Verify that attribute manipulations (especially filler vs. focal distinction) are understood via exit-interview debriefing.
+2. Confirm median rating task completion time is under 6 minutes.
+3. **Calibrate the time-pressure timer.** Target is median response time under pressure ~6 seconds versus ~15 seconds in the low-pressure condition. If 8 seconds proves too slack, tighten to 6 seconds; if too aggressive (respondents consistently fail to respond), loosen to 10 seconds.
+4. Detect any obvious profile-implausibility issues (e.g., a €6.50 "sandwich + water" separate-items profile may feel unrealistic and should be flagged).
+5. Validate that the manipulation check confirms felt pressure differs significantly across conditions.
+6. Confirm prices span the realistic WTP range without ceiling or floor effects on ratings.
+
+# Implementation Plan
+
+## Instrumentation
+
+We deploy the experiment in **Qualtrics**, using the built-in Conjoint module configured in **rating (full-profile) mode**. The CLSBE Qualtrics license confirms Conjoint availability.
+
+The instrument structure is:
+
+1. Informed consent and study overview.
+2. Pre-task covariates (hunger, price sensitivity, cafeteria use).
+3. **Random assignment to high-pressure or low-pressure branch** via Qualtrics's randomizer element.
+4. Condition-specific instructional primer and warm-up task.
+5. 12 randomized rating tasks, each displaying a single meal profile:
+   - **High-pressure branch:** visible countdown timer (8 s) in page header. Timer does not auto-advance; if it expires, a soft prompt "Please select quickly" appears.
+   - **Low-pressure branch:** no timer, respondent-paced.
+6. Manipulation check (felt pressure), post-task secondary outcomes, and demographics.
+7. Debrief and optional incentive entry.
+
+Stimuli include minimalist product photographs (sandwich, coffee, water, fruit) composed into bundle or separate-item layouts, with label badges, packaging cue, and pickup-speed cue rendered as consistent vector graphics. All visual elements are held constant across conditions except the manipulated attributes. Each profile is a pre-rendered composite image generated via a small script so every attribute combination has a visually consistent, standardized presentation.
+
+## Recruitment and Incentives
+
+Recruitment runs April 24 – May 4, 2026, via CLSBE channels (see §4.2). To incentivize completion, respondents who complete the survey enter a lottery for one of five €20 Bolt Food vouchers — chosen deliberately because it matches the food-spending context and thus reduces incentive artifacts.
+
+## Timeline
+
+| Phase | Dates |
+|---|---|
+| Design finalization + Qualtrics build | April 22 – 26 |
+| Pilot (n ≈ 20) + instrument refinement | April 27 – 29 |
+| Full data collection | April 30 – May 4 |
+| Data cleaning and analysis | May 5 – 8 |
+| Report writing and presentation prep | May 9 – 12 |
+| **Report submission** | **May 13 (Wednesday)** |
+| **Presentation** | **May 14 (Thursday)** |
+
+# Analysis Plan
+
+## Pre-Analysis Preparation
+
+Data will be cleaned in R: failed manipulation checks excluded, completion times validated (drop respondents under 2 minutes total or over 20 minutes as inattentive/disengaged), straightliners flagged, profile-level data reshaped to long format (one row per rating).
+
+## Randomization Check
+
+We will report the empirical distribution of attribute levels across all profiles and across the two pressure conditions to confirm balanced randomization. We will also run balance tests on pre-treatment covariates (hunger, price sensitivity, cafeteria usage, demographics) between the pressure conditions — any significant imbalance will be addressed via covariate adjustment in the primary model.
+
+## Manipulation Check for Time Pressure
+
+We will verify that the time-pressure manipulation had the intended effect via two checks:
+
+1. **Self-reported pressure:** mean scores on "I felt rushed when rating" should be significantly higher in the high-pressure condition.
+2. **Response time:** median per-profile response time should be substantially shorter in the high-pressure condition.
+
+Failure of both checks would indicate the manipulation did not work and would require reinterpretation of H7.
+
+## Primary Analysis
+
+The primary model is a linear mixed-effects regression with respondent random intercepts, estimated on the long-format data:
+
+$$
+\text{Rating}_{ij} = \alpha_i + \sum_{k \in \text{Focal}} \beta_k X_{ijk} + \sum_{k \in \text{Filler}} \gamma_k X_{ijk} + \delta \cdot \text{Pressure}_i + \sum_{k} \lambda_k (X_{ijk} \times \text{Pressure}_i) + \epsilon_{ij}
+$$
+
+where $i$ indexes respondents, $j$ indexes rating tasks, $X_{ijk}$ are attribute-level dummy variables (reference level omitted), Pressure$_i$ is the between-subjects indicator, and $\alpha_i \sim \mathcal{N}(0, \sigma^2_\alpha)$ is the respondent random intercept. We use `lme4::lmer()` for estimation with `lmerTest` for Satterthwaite-approximated degrees of freedom.
+
+We report:
+
+- Coefficient estimates with 95% confidence intervals for every focal attribute level (with reference-level indicators).
+- Coefficient estimates for filler attributes, reported transparently but not interpreted substantively.
+- The main effect of time pressure ($\delta$).
+- All focal-attribute × pressure interactions ($\lambda_k$) — these test H7.
+- A coefficient plot in the standard conjoint visualization style.
+
+## Hypothesis Tests
+
+- **H1 – H4:** Linear hypothesis tests on $\beta_k$ coefficients.
+- **H5 (Bundle × Label):** Interaction term in a model that includes the Format × Label product.
+- **H6 (Heterogeneity by price sensitivity / cafeteria frequency):** Subgroup models split at the median, compared via `emmeans` contrasts.
+- **H7 (Time pressure moderation):** Joint test of $\lambda_k$ for Format and Label coefficients; expected pattern is amplification under high pressure.
+
+## Robustness Analyses
+
+- **Full interaction model:** Re-estimate with all focal attributes × pressure interactions jointly, not just Format and Label, to confirm the predicted asymmetric pattern (H7).
+- **Ordered logistic regression:** Re-estimate treating ratings as ordinal to guard against violations of the linear-response assumption.
+- **Respondent random slopes:** Extend the mixed model with random slopes on Format and Label to capture preference heterogeneity.
+- **Excluding fillers:** Confirm focal estimates are not sensitive to inclusion of filler attributes in the model.
+
+## Willingness-to-Pay Derivation
+
+WTP for each non-reference attribute level is computed as:
+
+$$
+\text{WTP}_\ell = -\frac{\beta_\ell}{\beta_{\text{price}}}
+$$
+
+where $\beta_\ell$ is the coefficient for level $\ell$ and $\beta_{\text{price}}$ is the (expected negative) linear coefficient on price (treated as continuous at €3.50/€4.50/€5.50/€6.50). Uncertainty is propagated via nonparametric bootstrap clustered at the respondent level. We will additionally estimate WTP separately within each pressure condition to test whether time pressure inflates WTP for labeled or bundled products (consistent with H7).
+
+Conjoint-derived WTP estimates will be cross-validated against the open-ended WTP measure captured in the post-task block.
+
+# Expected Challenges
+
+1. **Recruitment volume.** Reaching n = 200 from a convenience sample within ~one week is ambitious. Mitigation: early outreach, multiple channels, incentive lottery, and a documented fallback target of n = 150 with explicit minimum-detectable-effect implications.
+2. **Sample homogeneity.** CLSBE students skew toward business background and high socioeconomic status — reducing external validity to the general university population. We explicitly scope conclusions to "CLSBE-like settings" and discuss this in limitations.
+3. **Hypothetical bias.** Ratings measure stated, not revealed, preferences. We mitigate by (i) framing tasks as realistic purchase decisions, (ii) an incentive-compatible lottery with a food voucher that matches the decision context, and (iii) a realism manipulation check.
+4. **Time-pressure calibration.** An 8-second timer may feel too aggressive for some respondents (leading to random or defensive responses) or too lenient for others (failing to induce heuristic processing). The pilot is specifically designed to surface this; if the manipulation check reveals no reliable difference in felt pressure between conditions, we will recalibrate the timer before full launch.
+5. **Attention and fatigue.** 12 rating tasks approaches the practical ceiling for online respondents, especially under time pressure. We mitigate by keeping profiles visually compact, progress indicators visible, and excluding speeders, straightliners, and those failing the attention check.
+6. **Demand effects with only two filler attributes.** Two fillers (pickup speed, packaging) is a pragmatic compromise between realism and respondent burden. Bundle and label manipulations remain the most salient attributes; we cannot eliminate demand effects entirely. We will inspect post-task free-text comments for hypothesis guessing and flag this in the limitations.
+7. **Profile plausibility.** Certain attribute combinations (e.g., €6.50 for "sandwich + water" separate) may feel unrealistic and distort ratings. The pilot will surface any implausibility issues; if severe, we will impose minimal plausibility constraints in the randomization and document them in the pre-registration.
+8. **Multiple testing.** With seven hypotheses and numerous subgroup analyses, we adopt a pre-registered analysis plan and report Holm-corrected p-values alongside uncorrected values for the confirmatory hypotheses (H1–H7).
+
+# Ethical Considerations
+
+The study involves minimal risk. All respondents provide informed consent at entry, are told the study concerns "food choices in campus settings," and are free to withdraw at any time without penalty. Data are stored pseudonymously (no directly identifying information is collected) in compliance with GDPR. The only personal identifier captured — an optional email address for the voucher lottery — is stored separately from response data and deleted after prize distribution. No deception is used beyond the standard practice of not disclosing the precise hypotheses before completion; a debrief is provided at the end. The instrument, consent form, and debrief will be submitted to the CLSBE research-ethics review channel prior to deployment.
+
+# Limitations and Scope (Preview)
+
+We anticipate three principal limitations, which will be fully developed in Part III:
+
+- **External validity:** CLSBE-only convenience sample.
+- **Hypothetical choices:** no real purchase transaction despite incentive-compatible framing.
+- **Scope of attributes:** the study fixes many real-world factors (brand, location, time of day, menu breadth) that would also influence real choices.
+
+These limitations point to natural follow-up work: a field experiment at an actual campus cafeteria with real transactions, varying the bundle/label/price levers in a live retail environment.
+
+# References {-}
+
+::: {#refs}
+:::
+
+# Appendix A — Attribute and Level Summary
+
+**Profile-level attributes (randomized per rating task):**
+
+| Type | Attribute | Levels | Reference Level |
+|---|---|---|---|
+| Focal | Format | Bundle, Separate | Separate |
+| Focal | Label | None, "Menu Deal", "Student Fuel" | None |
+| Focal | Composition | Sandwich + Water, Sandwich + Coffee, Sandwich + Coffee + Fruit | Sandwich + Water |
+| Focal | Price | €3.50, €4.50, €5.50, €6.50 | treated as continuous |
+| Filler | Pickup speed | Ready now, 2-minute wait | Ready now |
+| Filler | Packaging | Open tray, Closed container | Open tray |
+
+**Respondent-level factor (randomized at survey entry):**
+
+| Factor | Levels | Reference Level |
+|---|---|---|
+| Time pressure | High (8-second timer), Low (no timer) | Low |
+
+# Appendix B — Questionnaire Outline
+
+The survey is structured as eight blocks. Blocks marked *[branched]* display differently in the high-pressure versus low-pressure conditions; all other blocks are identical across conditions.
+
+**Block 1 — Welcome and consent.** Study title, estimated duration (~6 minutes), data-handling statement (GDPR, anonymous, right to withdraw), contact information for the research team, and an explicit "I consent" / "I do not consent" radio button.
+
+**Block 2 — Pre-task covariates.** Measured before the rating task to avoid post-treatment contamination:
+
+- Hunger right now (1 "not at all hungry" — 7 "extremely hungry").
+- Hours since last substantive meal (numeric, bounded 0–24).
+- Cafeteria usage frequency — "In a typical week, how often do you eat at the CLSBE cafeteria?" (0, 1, 2, 3, 4, 5+ days).
+- Price-sensitivity scale (3 items, 1–7 Likert), averaged:
+  - "I am willing to make an extra effort to find lower prices for lunch."
+  - "The money saved by finding lower lunch prices is usually worth the time and effort."
+  - "I will shop around for the cheapest option even when the total saving is only a euro or two."
+- Dietary restrictions (checklist: vegetarian, vegan, halal, kosher, gluten-free, other, none).
+
+**Block 3 — Pressure assignment [branched].** A Qualtrics randomizer element assigns each respondent to *High Pressure* or *Low Pressure* with equal probability. Assignment is recorded as an embedded variable and stored for analysis but not displayed to the respondent.
+
+**Block 4 — Instructional primer [branched].**
+
+- *High Pressure:* "To simulate a real cafeteria queue, please evaluate each option quickly. You will have a short countdown (8 seconds) for each rating. Please don't overthink — trust your gut."
+- *Low Pressure:* "Please take your time to carefully evaluate each option. There is no time limit; we want your considered judgment."
+
+Both conditions then see a single warm-up rating task (discarded from analysis) and a screen confirming the rating scale anchors before the main task begins.
+
+**Block 5 — Rating tasks [branched on timer display].** 12 sequential rating tasks. Each task shows one randomly generated meal profile with:
+
+- Product composite image (sandwich, optional coffee/water, optional fruit).
+- Label badge where present ("Menu Deal" or "Student Fuel"); no badge shown when level is "None".
+- Composition description in text below the image.
+- Pickup speed cue ("Ready now" or "2-minute wait") as a small icon.
+- Packaging cue ("Open tray" or "Closed container") as a small icon.
+- Price displayed prominently in € format.
+
+Rating prompt (identical in both conditions): *"How appealing is this meal option to you right now?"* — 7-point Likert scale from "Not at all appealing" (1) to "Extremely appealing" (7). Response time is silently recorded.
+
+*High Pressure only:* A countdown timer (8 s) is visible in the page header. If it expires without a response, a soft nudge appears: "Please select quickly." The timer does not auto-advance.
+
+**Block 6 — Manipulation check and secondary outcomes.**
+
+- Felt pressure: "While rating the meal options, I felt rushed." (1–7 Likert) — used as the direct manipulation check for the time-pressure factor.
+- Open-ended WTP: "Imagine you are designing your ideal lunch at the campus cafeteria — sandwich plus any sides and drinks you want. What is the maximum you would pay for it?" (open numeric, €).
+- Realism check: "How realistic did the meal options you just rated feel, compared to real CLSBE cafeteria offerings?" (1–7 Likert).
+- Hypothesis-guessing open-text: "In one or two sentences, what do you think this study was investigating?" (free-response, used qualitatively to flag demand-effect risk).
+
+**Block 7 — Demographics.** Gender, age (in bands), year of study, nationality, approximate monthly discretionary budget (€ bands).
+
+**Block 8 — Attention check, debrief, and lottery entry.**
+
+- Attention check: an instructed-response item embedded in a grid ("For quality control, please select 'Strongly agree' for this item").
+- Debrief text briefly explaining that attribute combinations were randomized and that the study tests how bundling, framing, and time pressure interact.
+- Optional email entry for the €20 Bolt Food voucher lottery (stored in a separate Qualtrics field detached from response data and deleted after prize distribution).
+
+All response data are exported to .csv at the end of fielding and cleaned in R per the analysis plan in §6.

@@ -1,0 +1,72 @@
+{
+  "design_mode": "rating_full_profile",
+  "profiles_per_respondent": 12,
+  "warmup_profiles": 1,
+  "rating_scale": {
+    "min": 1,
+    "max": 7,
+    "min_label": "Not at all appealing",
+    "max_label": "Extremely appealing"
+  },
+  "attributes": [
+    {
+      "id": "format",
+      "label": "Format",
+      "type": "focal",
+      "levels": ["Separate items", "Bundle"],
+      "reference": "Separate items"
+    },
+    {
+      "id": "label",
+      "label": "Label",
+      "type": "focal",
+      "levels": ["None", "Menu Deal", "Student Fuel"],
+      "reference": "None"
+    },
+    {
+      "id": "composition",
+      "label": "Composition",
+      "type": "focal",
+      "levels": [
+        "Sandwich + Water",
+        "Sandwich + Coffee",
+        "Sandwich + Coffee + Fruit"
+      ],
+      "reference": "Sandwich + Water"
+    },
+    {
+      "id": "price",
+      "label": "Price",
+      "type": "focal",
+      "levels": ["3.50", "4.50", "5.50", "6.50"],
+      "reference": "continuous",
+      "unit": "EUR"
+    },
+    {
+      "id": "pickup_speed",
+      "label": "Pickup speed",
+      "type": "filler",
+      "levels": ["Ready now", "2-minute wait"],
+      "reference": "Ready now"
+    },
+    {
+      "id": "packaging",
+      "label": "Packaging",
+      "type": "filler",
+      "levels": ["Open tray", "Closed container"],
+      "reference": "Open tray"
+    }
+  ],
+  "between_subjects": {
+    "id": "pressure",
+    "label": "Time pressure",
+    "levels": ["low", "high"],
+    "reference": "low",
+    "assignment": "Qualtrics randomizer, equal probability"
+  },
+  "profile_space_size": 288,
+  "randomization": {
+    "strategy": "independent uniform sampling per attribute, no-replacement within respondent",
+    "constraints": "none at launch; pilot may flag implausible combinations"
+  }
+}

@@ -1,38 +1,121 @@
-# Block 5 — 12 Conjoint Rating Tasks
+# Block 5 — 12 Rating Tasks (Loop & Merge design)
 
-This is the heart of the experiment. Implemented via the Qualtrics **Conjoint** module in **rating / full-profile** mode.
+Original plan assumed the Qualtrics **Conjoint** module. The CLSBE license does
+not expose the Conjoint question type, so the rating task is implemented via
+**Loop & Merge** over a deterministic, fully-balanced profile pool.
 
-## Conjoint configuration (set in Qualtrics Conjoint builder)
+## Profile pool
 
-**Mode:** Full-profile, rating
-**Number of profiles per respondent:** 12
-**Rating scale:** 1–7 Likert, anchors "Not at all appealing" / "Extremely appealing"
-**Randomization:** Independent uniform per attribute; no-replacement within respondent.
-**Attributes and levels:** As in `qualtrics/conjoint-spec.json` (the Conjoint builder requires manual entry of each attribute and its levels — see the JSON for exact text).
+- `qualtrics/profiles/profile-pool.csv` — 288 rows, full factorial of the six
+  attributes. Generated deterministically by
+  `qualtrics/scripts/generate-profile-pool.py`; no randomness, reproducible.
+- Columns: `ProfileID`, `Format`, `Label`, `Composition`, `Price`,
+  `PickupSpeed`, `Packaging`.
 
-## Profile page layout
-Each profile page shows:
-1. **Page header:** (high-pressure only) a countdown timer — injected by `timer-high-pressure.js`.
-2. **Composite image:** pre-rendered PNG for this attribute combination (see `stimuli-plan.md`). Not yet generated; for the pilot, use Qualtrics' text-only profile rendering and add images post-pilot.
-3. **Text row 1:** `{Format}` — either "Bundle" or "Separate items".
-4. **Text row 2:** `{Composition}` — e.g., "Sandwich + Coffee + Fruit".
-5. **Text row 3 (conditional):** label badge — "Menu Deal" or "Student Fuel" — shown only when `label != None`.
-6. **Icon row:** `{Pickup speed}` and `{Packaging}` rendered as small Qualtrics-inserted text+icon.
-7. **Price:** rendered bold, e.g., `€4.50`.
-8. **Rating prompt:** *"How appealing is this meal option to you right now?"* — 1–7 slider.
+The pool is fully balanced: every attribute level appears equally often, and
+every pair of attribute levels appears equally often. Drawing 12 rows uniformly
+at random from this pool preserves the identification assumptions of
+Hainmueller et al. (2014) for rating-based conjoint: attribute levels are
+independent across draws and uniformly distributed.
 
-## JavaScript attached to rating page
-- **All respondents:** `response-time.js` captures ms-precision RT; writes to `rt_ms_{profileIndex}` embedded data key.
-- **High-pressure only:** `timer-high-pressure.js` reads `timer_duration_s` and shows the countdown.
+## Two parallel block copies
 
-## Attach JS per branch
-- The **same** rating block element is used in both branches; the **high-pressure** branch adds a page-level Question JS that loads the timer; the **low-pressure** branch does not.
-- Implementation trick: put the timer JS inside an `if (Qualtrics.SurveyEngine.getEmbeddedData('pressure') === 'high') { … }` guard, and attach it globally. Safer than maintaining two block copies.
+Create two blocks in Qualtrics, identical except for the timer JS:
 
-## Validation rules
-- Force response on each rating.
-- Back button disabled (set in **Survey Options → Back Button = OFF for this block**).
-- Page timer (hidden, built-in) ON for diagnostic logging — not used as outcome (we use `rt_ms_*` from JS).
+- `05a Rating — High Pressure` — timer JS attached.
+- `05b Rating — Low Pressure` — no timer JS.
 
-## Pause behavior
-- Soft nudge on timer expiry: JS shows a muted-red bar reading "Please select quickly." The timer does **not** auto-advance; respondents still must click a rating before "Next".
+Both are wired into the respective pressure branches in the Survey Flow.
+
+## Loop & Merge configuration (per block)
+
+1. Open block `05a` → **Block options → Loop & Merge**.
+2. Enable Loop & Merge.
+3. **Loop based on a fixed number of iterations: 12** (Qualtrics will sample
+   without replacement from the loop source when combined with Step 4).
+4. **Loop source: CSV**. Upload `qualtrics/profiles/profile-pool.csv`.
+   Map fields in this order (field indices are referenced in the question body
+   via `${lm://Field/N}`):
+   - Field 1 → `ProfileID`
+   - Field 2 → `Format`
+   - Field 3 → `Label`
+   - Field 4 → `Composition`
+   - Field 5 → `Price`
+   - Field 6 → `PickupSpeed`
+   - Field 7 → `Packaging`
+5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
+   respondent in random order.
+6. **Present only:** 12 (of 288).
+
+Repeat for block `05b`.
+
+## Rating question inside the loop (single question per block)
+
+Add ONE Slider question (Likert 1–7) per block. The question body displays
+the current profile's attributes via piped loop-merge fields.
+
+**Question body** — render as rich text (HTML mode):
+
+```
+<p><strong>Meal option ${lm://Field/1}</strong></p>
+<p>Format: ${lm://Field/2}<br>
+Composition: ${lm://Field/4}<br>
+Label: ${lm://Field/3}<br>
+Pickup speed: ${lm://Field/6}<br>
+Packaging: ${lm://Field/7}</p>
+<p><strong>Price: €${lm://Field/5}</strong></p>
+<p><em>How appealing is this meal option to you right now?</em></p>
+```
+
+If "Label: None" reads awkwardly, add a small JS snippet to hide that line
+when the value is "None":
+
+```javascript
+Qualtrics.SurveyEngine.addOnReady(function () {
+    var labelVal = "${lm://Field/3}";
+    if (labelVal === "None") {
+        var qText = this.getQuestionContainer().querySelector(".QuestionText");
+        if (qText) qText.innerHTML = qText.innerHTML.replace(/Label: None<br>\s*/, "");
+    }
+});
+```
+
+**Scale:** Slider, 1–7, labels "Not at all appealing" (1) and "Extremely
+appealing" (7). Force response ON.
+
+## Question JavaScript attached
+
+Both blocks attach `javascript/response-time.js`. Loop & Merge exposes the
+current iteration as `${lm://CurrentLoopNumber}` — already the default token
+used in that file.
+
+Block `05a` additionally attaches `javascript/timer-high-pressure.js` after
+`response-time.js`. Timer behavior is unchanged from the original spec.
+
+## Block options
+
+- **Back button:** OFF (per-block setting). Prevents retroactive rating edits
+  under time pressure.
+
+## Why this is equivalent to Conjoint for identification
+
+- Attribute levels are independently and uniformly distributed across the 288
+  profiles by construction.
+- "Random order, 12 iterations, no replacement within respondent" reproduces
+  the same per-respondent sampling distribution that the Conjoint module would
+  have produced.
+- No carryover: each respondent sees 12 profiles drawn independently of other
+  respondents.
+- The analysis model (lmer with respondent random intercepts, attribute-level
+  dummies) is identical to what the proposal specifies.
+
+The only loss compared to native Conjoint: no pre-registered orthogonal design
+matrix. We substitute a fully balanced full-factorial pool, which is actually
+stronger on balance.
+
+## Data export
+
+Each rating produces one cell per respondent × iteration. Loop & Merge
+prefixes the question name per iteration, e.g. `1_QID<n>` through
+`12_QID<n>`. Reshape to long format in R before analysis; join on `ProfileID`
+to recover attribute values.

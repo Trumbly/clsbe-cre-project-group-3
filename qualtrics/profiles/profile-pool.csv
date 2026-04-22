@@ -1,0 +1,289 @@
+ProfileID,Format,Label,Composition,Price,PickupSpeed,Packaging
+P001,Separate items,None,Sandwich + Water,3.50,Ready now,Open tray
+P002,Separate items,None,Sandwich + Water,3.50,Ready now,Closed container
+P003,Separate items,None,Sandwich + Water,3.50,2-minute wait,Open tray
+P004,Separate items,None,Sandwich + Water,3.50,2-minute wait,Closed container
+P005,Separate items,None,Sandwich + Water,4.50,Ready now,Open tray
+P006,Separate items,None,Sandwich + Water,4.50,Ready now,Closed container
+P007,Separate items,None,Sandwich + Water,4.50,2-minute wait,Open tray
+P008,Separate items,None,Sandwich + Water,4.50,2-minute wait,Closed container
+P009,Separate items,None,Sandwich + Water,5.50,Ready now,Open tray
+P010,Separate items,None,Sandwich + Water,5.50,Ready now,Closed container
+P011,Separate items,None,Sandwich + Water,5.50,2-minute wait,Open tray
+P012,Separate items,None,Sandwich + Water,5.50,2-minute wait,Closed container
+P013,Separate items,None,Sandwich + Water,6.50,Ready now,Open tray
+P014,Separate items,None,Sandwich + Water,6.50,Ready now,Closed container
+P015,Separate items,None,Sandwich + Water,6.50,2-minute wait,Open tray
+P016,Separate items,None,Sandwich + Water,6.50,2-minute wait,Closed container
+P017,Separate items,None,Sandwich + Coffee,3.50,Ready now,Open tray
+P018,Separate items,None,Sandwich + Coffee,3.50,Ready now,Closed container
+P019,Separate items,None,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P020,Separate items,None,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P021,Separate items,None,Sandwich + Coffee,4.50,Ready now,Open tray
+P022,Separate items,None,Sandwich + Coffee,4.50,Ready now,Closed container
+P023,Separate items,None,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P024,Separate items,None,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P025,Separate items,None,Sandwich + Coffee,5.50,Ready now,Open tray
+P026,Separate items,None,Sandwich + Coffee,5.50,Ready now,Closed container
+P027,Separate items,None,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P028,Separate items,None,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P029,Separate items,None,Sandwich + Coffee,6.50,Ready now,Open tray
+P030,Separate items,None,Sandwich + Coffee,6.50,Ready now,Closed container
+P031,Separate items,None,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P032,Separate items,None,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P033,Separate items,None,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P034,Separate items,None,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P035,Separate items,None,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P036,Separate items,None,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P037,Separate items,None,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P038,Separate items,None,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P039,Separate items,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P040,Separate items,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P041,Separate items,None,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P042,Separate items,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P043,Separate items,None,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P044,Separate items,None,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P045,Separate items,None,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P046,Separate items,None,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P047,Separate items,None,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P048,Separate items,None,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P049,Separate items,Menu Deal,Sandwich + Water,3.50,Ready now,Open tray
+P050,Separate items,Menu Deal,Sandwich + Water,3.50,Ready now,Closed container
+P051,Separate items,Menu Deal,Sandwich + Water,3.50,2-minute wait,Open tray
+P052,Separate items,Menu Deal,Sandwich + Water,3.50,2-minute wait,Closed container
+P053,Separate items,Menu Deal,Sandwich + Water,4.50,Ready now,Open tray
+P054,Separate items,Menu Deal,Sandwich + Water,4.50,Ready now,Closed container
+P055,Separate items,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray
+P056,Separate items,Menu Deal,Sandwich + Water,4.50,2-minute wait,Closed container
+P057,Separate items,Menu Deal,Sandwich + Water,5.50,Ready now,Open tray
+P058,Separate items,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container
+P059,Separate items,Menu Deal,Sandwich + Water,5.50,2-minute wait,Open tray
+P060,Separate items,Menu Deal,Sandwich + Water,5.50,2-minute wait,Closed container
+P061,Separate items,Menu Deal,Sandwich + Water,6.50,Ready now,Open tray
+P062,Separate items,Menu Deal,Sandwich + Water,6.50,Ready now,Closed container
+P063,Separate items,Menu Deal,Sandwich + Water,6.50,2-minute wait,Open tray
+P064,Separate items,Menu Deal,Sandwich + Water,6.50,2-minute wait,Closed container
+P065,Separate items,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray
+P066,Separate items,Menu Deal,Sandwich + Coffee,3.50,Ready now,Closed container
+P067,Separate items,Menu Deal,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P068,Separate items,Menu Deal,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P069,Separate items,Menu Deal,Sandwich + Coffee,4.50,Ready now,Open tray
+P070,Separate items,Menu Deal,Sandwich + Coffee,4.50,Ready now,Closed container
+P071,Separate items,Menu Deal,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P072,Separate items,Menu Deal,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P073,Separate items,Menu Deal,Sandwich + Coffee,5.50,Ready now,Open tray
+P074,Separate items,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container
+P075,Separate items,Menu Deal,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P076,Separate items,Menu Deal,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P077,Separate items,Menu Deal,Sandwich + Coffee,6.50,Ready now,Open tray
+P078,Separate items,Menu Deal,Sandwich + Coffee,6.50,Ready now,Closed container
+P079,Separate items,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P080,Separate items,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P081,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P082,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P083,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P084,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P085,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P086,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P087,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P088,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P089,Separate items,Menu Deal,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P090,Separate items,Menu Deal,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P091,Separate items,Menu Deal,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P092,Separate items,Menu Deal,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P093,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P094,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P095,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P096,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P097,Separate items,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray
+P098,Separate items,Student Fuel,Sandwich + Water,3.50,Ready now,Closed container
+P099,Separate items,Student Fuel,Sandwich + Water,3.50,2-minute wait,Open tray
+P100,Separate items,Student Fuel,Sandwich + Water,3.50,2-minute wait,Closed container
+P101,Separate items,Student Fuel,Sandwich + Water,4.50,Ready now,Open tray
+P102,Separate items,Student Fuel,Sandwich + Water,4.50,Ready now,Closed container
+P103,Separate items,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray
+P104,Separate items,Student Fuel,Sandwich + Water,4.50,2-minute wait,Closed container
+P105,Separate items,Student Fuel,Sandwich + Water,5.50,Ready now,Open tray
+P106,Separate items,Student Fuel,Sandwich + Water,5.50,Ready now,Closed container
+P107,Separate items,Student Fuel,Sandwich + Water,5.50,2-minute wait,Open tray
+P108,Separate items,Student Fuel,Sandwich + Water,5.50,2-minute wait,Closed container
+P109,Separate items,Student Fuel,Sandwich + Water,6.50,Ready now,Open tray
+P110,Separate items,Student Fuel,Sandwich + Water,6.50,Ready now,Closed container
+P111,Separate items,Student Fuel,Sandwich + Water,6.50,2-minute wait,Open tray
+P112,Separate items,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container
+P113,Separate items,Student Fuel,Sandwich + Coffee,3.50,Ready now,Open tray
+P114,Separate items,Student Fuel,Sandwich + Coffee,3.50,Ready now,Closed container
+P115,Separate items,Student Fuel,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P116,Separate items,Student Fuel,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P117,Separate items,Student Fuel,Sandwich + Coffee,4.50,Ready now,Open tray
+P118,Separate items,Student Fuel,Sandwich + Coffee,4.50,Ready now,Closed container
+P119,Separate items,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P120,Separate items,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P121,Separate items,Student Fuel,Sandwich + Coffee,5.50,Ready now,Open tray
+P122,Separate items,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container
+P123,Separate items,Student Fuel,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P124,Separate items,Student Fuel,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P125,Separate items,Student Fuel,Sandwich + Coffee,6.50,Ready now,Open tray
+P126,Separate items,Student Fuel,Sandwich + Coffee,6.50,Ready now,Closed container
+P127,Separate items,Student Fuel,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P128,Separate items,Student Fuel,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P129,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P130,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P131,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P132,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P133,Separate items,Student Fuel,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P134,Separate items,Student Fuel,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P135,Separate items,Student Fuel,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P136,Separate items,Student Fuel,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P137,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P138,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P139,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P140,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P141,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P142,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P143,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P144,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P145,Bundle,None,Sandwich + Water,3.50,Ready now,Open tray
+P146,Bundle,None,Sandwich + Water,3.50,Ready now,Closed container
+P147,Bundle,None,Sandwich + Water,3.50,2-minute wait,Open tray
+P148,Bundle,None,Sandwich + Water,3.50,2-minute wait,Closed container
+P149,Bundle,None,Sandwich + Water,4.50,Ready now,Open tray
+P150,Bundle,None,Sandwich + Water,4.50,Ready now,Closed container
+P151,Bundle,None,Sandwich + Water,4.50,2-minute wait,Open tray
+P152,Bundle,None,Sandwich + Water,4.50,2-minute wait,Closed container
+P153,Bundle,None,Sandwich + Water,5.50,Ready now,Open tray
+P154,Bundle,None,Sandwich + Water,5.50,Ready now,Closed container
+P155,Bundle,None,Sandwich + Water,5.50,2-minute wait,Open tray
+P156,Bundle,None,Sandwich + Water,5.50,2-minute wait,Closed container
+P157,Bundle,None,Sandwich + Water,6.50,Ready now,Open tray
+P158,Bundle,None,Sandwich + Water,6.50,Ready now,Closed container
+P159,Bundle,None,Sandwich + Water,6.50,2-minute wait,Open tray
+P160,Bundle,None,Sandwich + Water,6.50,2-minute wait,Closed container
+P161,Bundle,None,Sandwich + Coffee,3.50,Ready now,Open tray
+P162,Bundle,None,Sandwich + Coffee,3.50,Ready now,Closed container
+P163,Bundle,None,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P164,Bundle,None,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P165,Bundle,None,Sandwich + Coffee,4.50,Ready now,Open tray
+P166,Bundle,None,Sandwich + Coffee,4.50,Ready now,Closed container
+P167,Bundle,None,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P168,Bundle,None,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P169,Bundle,None,Sandwich + Coffee,5.50,Ready now,Open tray
+P170,Bundle,None,Sandwich + Coffee,5.50,Ready now,Closed container
+P171,Bundle,None,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P172,Bundle,None,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P173,Bundle,None,Sandwich + Coffee,6.50,Ready now,Open tray
+P174,Bundle,None,Sandwich + Coffee,6.50,Ready now,Closed container
+P175,Bundle,None,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P176,Bundle,None,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P177,Bundle,None,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P178,Bundle,None,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P179,Bundle,None,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P180,Bundle,None,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P181,Bundle,None,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P182,Bundle,None,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P183,Bundle,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P184,Bundle,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P185,Bundle,None,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P186,Bundle,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P187,Bundle,None,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P188,Bundle,None,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P189,Bundle,None,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P190,Bundle,None,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P191,Bundle,None,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P192,Bundle,None,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P193,Bundle,Menu Deal,Sandwich + Water,3.50,Ready now,Open tray
+P194,Bundle,Menu Deal,Sandwich + Water,3.50,Ready now,Closed container
+P195,Bundle,Menu Deal,Sandwich + Water,3.50,2-minute wait,Open tray
+P196,Bundle,Menu Deal,Sandwich + Water,3.50,2-minute wait,Closed container
+P197,Bundle,Menu Deal,Sandwich + Water,4.50,Ready now,Open tray
+P198,Bundle,Menu Deal,Sandwich + Water,4.50,Ready now,Closed container
+P199,Bundle,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray
+P200,Bundle,Menu Deal,Sandwich + Water,4.50,2-minute wait,Closed container
+P201,Bundle,Menu Deal,Sandwich + Water,5.50,Ready now,Open tray
+P202,Bundle,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container
+P203,Bundle,Menu Deal,Sandwich + Water,5.50,2-minute wait,Open tray
+P204,Bundle,Menu Deal,Sandwich + Water,5.50,2-minute wait,Closed container
+P205,Bundle,Menu Deal,Sandwich + Water,6.50,Ready now,Open tray
+P206,Bundle,Menu Deal,Sandwich + Water,6.50,Ready now,Closed container
+P207,Bundle,Menu Deal,Sandwich + Water,6.50,2-minute wait,Open tray
+P208,Bundle,Menu Deal,Sandwich + Water,6.50,2-minute wait,Closed container
+P209,Bundle,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray
+P210,Bundle,Menu Deal,Sandwich + Coffee,3.50,Ready now,Closed container
+P211,Bundle,Menu Deal,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P212,Bundle,Menu Deal,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P213,Bundle,Menu Deal,Sandwich + Coffee,4.50,Ready now,Open tray
+P214,Bundle,Menu Deal,Sandwich + Coffee,4.50,Ready now,Closed container
+P215,Bundle,Menu Deal,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P216,Bundle,Menu Deal,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P217,Bundle,Menu Deal,Sandwich + Coffee,5.50,Ready now,Open tray
+P218,Bundle,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container
+P219,Bundle,Menu Deal,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P220,Bundle,Menu Deal,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P221,Bundle,Menu Deal,Sandwich + Coffee,6.50,Ready now,Open tray
+P222,Bundle,Menu Deal,Sandwich + Coffee,6.50,Ready now,Closed container
+P223,Bundle,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P224,Bundle,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P225,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P226,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P227,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P228,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P229,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P230,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P231,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P232,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P233,Bundle,Menu Deal,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P234,Bundle,Menu Deal,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P235,Bundle,Menu Deal,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P236,Bundle,Menu Deal,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P237,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P238,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P239,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P240,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P241,Bundle,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray
+P242,Bundle,Student Fuel,Sandwich + Water,3.50,Ready now,Closed container
+P243,Bundle,Student Fuel,Sandwich + Water,3.50,2-minute wait,Open tray
+P244,Bundle,Student Fuel,Sandwich + Water,3.50,2-minute wait,Closed container
+P245,Bundle,Student Fuel,Sandwich + Water,4.50,Ready now,Open tray
+P246,Bundle,Student Fuel,Sandwich + Water,4.50,Ready now,Closed container
+P247,Bundle,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray
+P248,Bundle,Student Fuel,Sandwich + Water,4.50,2-minute wait,Closed container
+P249,Bundle,Student Fuel,Sandwich + Water,5.50,Ready now,Open tray
+P250,Bundle,Student Fuel,Sandwich + Water,5.50,Ready now,Closed container
+P251,Bundle,Student Fuel,Sandwich + Water,5.50,2-minute wait,Open tray
+P252,Bundle,Student Fuel,Sandwich + Water,5.50,2-minute wait,Closed container
+P253,Bundle,Student Fuel,Sandwich + Water,6.50,Ready now,Open tray
+P254,Bundle,Student Fuel,Sandwich + Water,6.50,Ready now,Closed container
+P255,Bundle,Student Fuel,Sandwich + Water,6.50,2-minute wait,Open tray
+P256,Bundle,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container
+P257,Bundle,Student Fuel,Sandwich + Coffee,3.50,Ready now,Open tray
+P258,Bundle,Student Fuel,Sandwich + Coffee,3.50,Ready now,Closed container
+P259,Bundle,Student Fuel,Sandwich + Coffee,3.50,2-minute wait,Open tray
+P260,Bundle,Student Fuel,Sandwich + Coffee,3.50,2-minute wait,Closed container
+P261,Bundle,Student Fuel,Sandwich + Coffee,4.50,Ready now,Open tray
+P262,Bundle,Student Fuel,Sandwich + Coffee,4.50,Ready now,Closed container
+P263,Bundle,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P264,Bundle,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Closed container
+P265,Bundle,Student Fuel,Sandwich + Coffee,5.50,Ready now,Open tray
+P266,Bundle,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container
+P267,Bundle,Student Fuel,Sandwich + Coffee,5.50,2-minute wait,Open tray
+P268,Bundle,Student Fuel,Sandwich + Coffee,5.50,2-minute wait,Closed container
+P269,Bundle,Student Fuel,Sandwich + Coffee,6.50,Ready now,Open tray
+P270,Bundle,Student Fuel,Sandwich + Coffee,6.50,Ready now,Closed container
+P271,Bundle,Student Fuel,Sandwich + Coffee,6.50,2-minute wait,Open tray
+P272,Bundle,Student Fuel,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P273,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P274,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Closed container
+P275,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,2-minute wait,Open tray
+P276,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,2-minute wait,Closed container
+P277,Bundle,Student Fuel,Sandwich + Coffee + Fruit,4.50,Ready now,Open tray
+P278,Bundle,Student Fuel,Sandwich + Coffee + Fruit,4.50,Ready now,Closed container
+P279,Bundle,Student Fuel,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P280,Bundle,Student Fuel,Sandwich + Coffee + Fruit,4.50,2-minute wait,Closed container
+P281,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Open tray
+P282,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P283,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,2-minute wait,Open tray
+P284,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,2-minute wait,Closed container
+P285,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,Ready now,Open tray
+P286,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,Ready now,Closed container
+P287,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Open tray
+P288,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container

@@ -210,7 +210,7 @@ Before full deployment we will run a small pilot (n ≈ 20, CLSBE students, spli
 
 ## Instrumentation
 
-We deploy the experiment in **Qualtrics**, using the built-in Conjoint module configured in **rating (full-profile) mode**. The CLSBE Qualtrics license confirms Conjoint availability.
+We deploy the experiment in **Qualtrics**. The original plan assumed the built-in Conjoint module in rating (full-profile) mode, but the CLSBE license does not expose that question type. We therefore implement the rating task via Qualtrics **Loop & Merge** over a deterministic full-factorial profile pool of 288 rows (2 × 3 × 3 × 4 × 2 × 2 = all attribute combinations), generated reproducibly by `qualtrics/scripts/generate-profile-pool.py` and committed at `qualtrics/profiles/profile-pool.csv`. Each respondent's loop is configured to present 12 distinct profiles drawn uniformly at random without replacement from this pool, preserving the identification assumptions of @hainmueller2014 (independent and uniformly distributed attribute levels across a respondent's profiles). Identification, analysis model, and WTP derivation remain unchanged; the only deviation from a native Conjoint build is the absence of an orthogonal fractional-factorial design matrix, which we substitute with full-factorial balance (strictly stronger on attribute-level balance).
 
 The instrument structure is:
 

@@ -1,0 +1,21 @@
+.DS_Store
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*_cache/
+*_files/
+.quarto/
+_site/
+_book/
+_freeze/
+.env
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Sensitive raw survey data — keep local only
+data/raw/*
+!data/raw/.gitkeep
+

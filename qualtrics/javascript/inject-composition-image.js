@@ -1,7 +1,7 @@
 Qualtrics.SurveyEngine.addOnReady(function () {
     var composition = "${lm://Field/4}";
     var packaging = "${lm://Field/7}";
-    var base = "https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/";
+    var base = "https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/main/qualtrics/stimuli/img/";
 
     var openMap = {
         "Sandwich + Water": "sandwich-water.png",

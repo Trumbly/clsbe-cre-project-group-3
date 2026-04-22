@@ -1,0 +1,1870 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_clsbe_cre_group3",
+    "SurveyName": "CLSBE-CRE-Group3-BundleFraming-2026",
+    "SurveyDescription": "CLSBE CRE Group 3 — Bundle/Framing study, 2026",
+    "SurveyOwnerID": "UR_CLSBE",
+    "SurveyBrandID": "clsbe",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_default",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2026-04-22 11:44:00",
+    "CreatorID": "UR_CLSBE",
+    "LastModified": "2026-04-22 11:44:00",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "0000-00-00 00:00:00",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "01 Consent",
+          "ID": "BL_01Consent",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID1"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID2"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "02 Pre-Task Covariates",
+          "ID": "BL_02Covariates",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID4"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID5"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID6"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID7"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "04a Primer — High Pressure",
+          "ID": "BL_04aPrimerHigh",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID8"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "04b Primer — Low Pressure",
+          "ID": "BL_04bPrimerLow",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID11"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "05a Rating — High Pressure (PLACEHOLDER — ADD CONJOINT QUESTION HERE)",
+          "ID": "BL_05aRatingHigh",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID12"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed",
+            "BackButton": "false"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "05b Rating — Low Pressure (PLACEHOLDER — ADD CONJOINT QUESTION HERE)",
+          "ID": "BL_05bRatingLow",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID13"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed",
+            "BackButton": "false"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "06 Manipulation Check & Secondary Outcomes",
+          "ID": "BL_06ManipCheck",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID14"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID15"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID16"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID17"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "07 Demographics",
+          "ID": "BL_07Demographics",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID18"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID19"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID20"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID21"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID22"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "08 Attention, Debrief, Lottery",
+          "ID": "BL_08AttentionDebrief",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID23"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID24"
+            },
+            {
+              "Type": "PageBreak"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID25"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Collapsed"
+          }
+        },
+        {
+          "Type": "Trash",
+          "Description": "Trash / Unused Questions",
+          "ID": "BL_Trash",
+          "BlockElements": []
+        }
+      ]
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Flow": [
+          {
+            "Type": "EmbeddedData",
+            "FlowID": "FL_1",
+            "EmbeddedData": [
+              {
+                "Description": "pressure",
+                "Type": "Custom",
+                "Field": "pressure",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "timer_duration_s",
+                "Type": "Custom",
+                "Field": "timer_duration_s",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": "0"
+              },
+              {
+                "Description": "warmup_discarded",
+                "Type": "Custom",
+                "Field": "warmup_discarded",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": "false"
+              },
+              {
+                "Description": "attention_pass",
+                "Type": "Custom",
+                "Field": "attention_pass",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": "false"
+              },
+              {
+                "Description": "rt_ms_1",
+                "Type": "Custom",
+                "Field": "rt_ms_1",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_2",
+                "Type": "Custom",
+                "Field": "rt_ms_2",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_3",
+                "Type": "Custom",
+                "Field": "rt_ms_3",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_4",
+                "Type": "Custom",
+                "Field": "rt_ms_4",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_5",
+                "Type": "Custom",
+                "Field": "rt_ms_5",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_6",
+                "Type": "Custom",
+                "Field": "rt_ms_6",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_7",
+                "Type": "Custom",
+                "Field": "rt_ms_7",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_8",
+                "Type": "Custom",
+                "Field": "rt_ms_8",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_9",
+                "Type": "Custom",
+                "Field": "rt_ms_9",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_10",
+                "Type": "Custom",
+                "Field": "rt_ms_10",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_11",
+                "Type": "Custom",
+                "Field": "rt_ms_11",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              },
+              {
+                "Description": "rt_ms_12",
+                "Type": "Custom",
+                "Field": "rt_ms_12",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              }
+            ]
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_01Consent",
+            "FlowID": "FL_2"
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_3",
+            "Description": "Consent-fail branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "Question",
+                  "QuestionID": "QID2",
+                  "QuestionIsInPage": "0",
+                  "ChoiceLocator": "q://QID2/SelectableChoice/2",
+                  "Operator": "Selected",
+                  "QuestionIDFromLocator": "QID2",
+                  "LeftOperand": "q://QID2/SelectableChoice/2",
+                  "Type": "Expression",
+                  "Description": "Selected \"No, I do not consent.\""
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "EndSurvey",
+                "FlowID": "FL_4",
+                "EndingType": "Advanced",
+                "Options": {
+                  "Advanced": "true",
+                  "SurveyTermination": "DisplayMessage",
+                  "EOSMessage": "MS_consent_decline",
+                  "EOSMessageLibrary": "UR_CLSBE",
+                  "EOSRedirectURL": ""
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_02Covariates",
+            "FlowID": "FL_5"
+          },
+          {
+            "Type": "BlockRandomizer",
+            "FlowID": "FL_14",
+            "SubSet": 1,
+            "EvenPresentation": true,
+            "Flow": [
+              {
+                "Type": "Group",
+                "FlowID": "FL_6",
+                "Description": "High-Pressure Branch",
+                "Flow": [
+                  {
+                    "Type": "EmbeddedData",
+                    "FlowID": "FL_7",
+                    "EmbeddedData": [
+                      {
+                        "Description": "pressure",
+                        "Type": "Custom",
+                        "Field": "pressure",
+                        "VariableType": "String",
+                        "DataVisibility": [],
+                        "AnalyzeText": false,
+                        "Value": "high"
+                      },
+                      {
+                        "Description": "timer_duration_s",
+                        "Type": "Custom",
+                        "Field": "timer_duration_s",
+                        "VariableType": "String",
+                        "DataVisibility": [],
+                        "AnalyzeText": false,
+                        "Value": "8"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_04aPrimerHigh",
+                    "FlowID": "FL_8"
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_05aRatingHigh",
+                    "FlowID": "FL_9"
+                  }
+                ]
+              },
+              {
+                "Type": "Group",
+                "FlowID": "FL_10",
+                "Description": "Low-Pressure Branch",
+                "Flow": [
+                  {
+                    "Type": "EmbeddedData",
+                    "FlowID": "FL_11",
+                    "EmbeddedData": [
+                      {
+                        "Description": "pressure",
+                        "Type": "Custom",
+                        "Field": "pressure",
+                        "VariableType": "String",
+                        "DataVisibility": [],
+                        "AnalyzeText": false,
+                        "Value": "low"
+                      },
+                      {
+                        "Description": "timer_duration_s",
+                        "Type": "Custom",
+                        "Field": "timer_duration_s",
+                        "VariableType": "String",
+                        "DataVisibility": [],
+                        "AnalyzeText": false,
+                        "Value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_04bPrimerLow",
+                    "FlowID": "FL_12"
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_05bRatingLow",
+                    "FlowID": "FL_13"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_06ManipCheck",
+            "FlowID": "FL_15"
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_07Demographics",
+            "FlowID": "FL_16"
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_08AttentionDebrief",
+            "FlowID": "FL_17"
+          },
+          {
+            "Type": "EndSurvey",
+            "FlowID": "FL_18",
+            "EndingType": "Default",
+            "Options": {
+              "Advanced": "true",
+              "SurveyTermination": "DisplayMessage",
+              "EOSMessage": "MS_thanks"
+            }
+          }
+        ],
+        "Properties": {
+          "Count": 18
+        },
+        "FlowID": "FL_0",
+        "Type": "Root"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "true",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "VerboseText",
+        "PartialData": "+1 week",
+        "ValidationMessage": "",
+        "PreviousButton": " ← ",
+        "NextButton": " → ",
+        "SkinLibrary": "clsbe",
+        "SkinType": "MQ",
+        "Skin": "clsbe_default",
+        "NewScoring": 1,
+        "AnonymizeResponse": "Yes"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SCO",
+      "PrimaryAttribute": "Survey Scoring",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ScoringCategories": [],
+        "ScoringCategoryIDs": [],
+        "ScoringSummaryCategory": "",
+        "ScoringSummaryAfterQuestions": 0,
+        "ScoringSummaryAfterSurvey": 0,
+        "AutoScoringEnabled": 0
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": "1.1.0",
+      "Payload": {
+        "ProjectCategory": "CORE",
+        "SchemaVersion": "1.1.0"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "STAT",
+      "PrimaryAttribute": "SurveyStats",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MobileCompatible": [],
+        "ID": "Survey Statistics"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "QC",
+      "PrimaryAttribute": "QuestionCount",
+      "SecondaryAttribute": "25",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_default",
+      "SecondaryAttribute": "Default Response Set",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SE",
+      "PrimaryAttribute": "SurveyEndMessages",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MS_consent_decline": {
+          "descr": "Consent declined",
+          "Message": "Thank you. Your response has not been recorded."
+        },
+        "MS_thanks": {
+          "descr": "Completion thanks",
+          "Message": "Thank you — you're entered. Have a good lunch!"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>Welcome!</strong></p><p>This short survey (~6 minutes) is part of a research project at the Católica-Lisbon School of Business and Economics on <strong>food choices in campus settings</strong>. Your participation is entirely voluntary and you may withdraw at any time without penalty.</p><p><strong>What we collect:</strong> Your answers to a small number of questions plus how you rate a series of example meal offers. No directly identifying information is stored with your responses.</p><p><strong>Incentive:</strong> On completion you may optionally enter a lottery for one of five €20 Bolt Food vouchers. Your email, if provided, is stored separately from your responses and deleted after prizes are distributed.</p><p><strong>Data handling:</strong> Responses are stored pseudonymously on Qualtrics (CLSBE license, EU-hosted) in compliance with GDPR. Aggregated results may be published; individual responses will not.</p><p><strong>Contact:</strong> max.noelle-wying [at] edu.ulisboa.pt</p>",
+        "DataExportTag": "Q1_1",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q1_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID1",
+        "QuestionText_Unsafe": "<p><strong>Welcome!</strong></p><p>This short survey (~6 minutes) is part of a research project at the Católica-Lisbon School of Business and Economics on <strong>food choices in campus settings</strong>. Your participation is entirely voluntary and you may withdraw at any time without penalty.</p><p><strong>What we collect:</strong> Your answers to a small number of questions plus how you rate a series of example meal offers. No directly identifying information is stored with your responses.</p><p><strong>Incentive:</strong> On completion you may optionally enter a lottery for one of five €20 Bolt Food vouchers. Your email, if provided, is stored separately from your responses and deleted after prizes are distributed.</p><p><strong>Data handling:</strong> Responses are stored pseudonymously on Qualtrics (CLSBE license, EU-hosted) in compliance with GDPR. Aggregated results may be published; individual responses will not.</p><p><strong>Contact:</strong> max.noelle-wying [at] edu.ulisboa.pt</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>I have read and understood the above information. I am at least 18 years old and consent to take part in this study.</em>",
+        "DataExportTag": "Q1_2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q1_2",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID2",
+        "QuestionText_Unsafe": "<em>I have read and understood the above information. I am at least 18 years old and consent to take part in this study.</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Yes, I consent."
+          },
+          "2": {
+            "Display": "No, I do not consent."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "NextChoiceId": 3
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>Right now, how hungry are you?</em>",
+        "DataExportTag": "Q2_1",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true
+        },
+        "QuestionDescription": "Q2_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID3",
+        "QuestionText_Unsafe": "<em>Right now, how hungry are you?</em>",
+        "SubSelector": "SingleAnswer",
+        "Choices": {
+          "1": {
+            "Display": "Right now, how hungry are you?"
+          }
+        },
+        "ChoiceOrder": [
+          1
+        ],
+        "Answers": {
+          "1": {
+            "Display": "1 - Not at all hungry"
+          },
+          "2": {
+            "Display": "2"
+          },
+          "3": {
+            "Display": "3"
+          },
+          "4": {
+            "Display": "4"
+          },
+          "5": {
+            "Display": "5"
+          },
+          "6": {
+            "Display": "6"
+          },
+          "7": {
+            "Display": "7 - Extremely hungry"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "NextChoiceId": 2,
+        "NextAnswerId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>How many hours has it been since your last substantive meal?</em> (0–24)",
+        "DataExportTag": "Q2_2",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q2_2",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "ContentType",
+            "ContentType": "ValidNumber",
+            "ValidNumber": {
+              "Min": "0",
+              "Max": "24"
+            }
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID4",
+        "QuestionText_Unsafe": "<em>How many hours has it been since your last substantive meal?</em> (0–24)"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>In a typical week, how often do you eat at the CLSBE cafeteria?</em>",
+        "DataExportTag": "Q2_3",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q2_3",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID5",
+        "QuestionText_Unsafe": "<em>In a typical week, how often do you eat at the CLSBE cafeteria?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "0 days"
+          },
+          "2": {
+            "Display": "1 day"
+          },
+          "3": {
+            "Display": "2 days"
+          },
+          "4": {
+            "Display": "3 days"
+          },
+          "5": {
+            "Display": "4 days"
+          },
+          "6": {
+            "Display": "5+ days"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "NextChoiceId": 7
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>How much do you agree with each statement?</em>",
+        "DataExportTag": "Q2_4",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q2_4",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID6",
+        "QuestionText_Unsafe": "<em>How much do you agree with each statement?</em>",
+        "SubSelector": "SingleAnswer",
+        "Choices": {
+          "1": {
+            "Display": "I am willing to make an extra effort to find lower prices for lunch."
+          },
+          "2": {
+            "Display": "The money saved by finding lower lunch prices is usually worth the time and effort."
+          },
+          "3": {
+            "Display": "I will shop around for the cheapest option even when the total saving is only a euro or two."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Answers": {
+          "1": {
+            "Display": "1 - Strongly disagree"
+          },
+          "2": {
+            "Display": "2"
+          },
+          "3": {
+            "Display": "3"
+          },
+          "4": {
+            "Display": "4"
+          },
+          "5": {
+            "Display": "5"
+          },
+          "6": {
+            "Display": "6"
+          },
+          "7": {
+            "Display": "7 - Strongly agree"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "NextChoiceId": 4,
+        "NextAnswerId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>Do any of the following apply to you?</em> (Select all that apply.)",
+        "DataExportTag": "Q2_5",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q2_5",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID7",
+        "QuestionText_Unsafe": "<em>Do any of the following apply to you?</em> (Select all that apply.)",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Vegetarian"
+          },
+          "2": {
+            "Display": "Vegan"
+          },
+          "3": {
+            "Display": "Halal"
+          },
+          "4": {
+            "Display": "Kosher"
+          },
+          "5": {
+            "Display": "Gluten-free"
+          },
+          "6": {
+            "Display": "Other"
+          },
+          "7": {
+            "Display": "None"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "NextChoiceId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>Imagine you are in the CLSBE cafeteria at lunchtime.</strong></p><p>To simulate a real cafeteria queue, please evaluate each meal option <strong>quickly</strong>. You will have a short countdown (<strong>8 seconds</strong>) next to each rating. Please don't overthink — trust your gut.</p><p>The scale runs from <strong>1 = Not at all appealing</strong> to <strong>7 = Extremely appealing</strong>.</p>",
+        "DataExportTag": "Q4a_1",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q4a_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID8",
+        "QuestionText_Unsafe": "<p><strong>Imagine you are in the CLSBE cafeteria at lunchtime.</strong></p><p>To simulate a real cafeteria queue, please evaluate each meal option <strong>quickly</strong>. You will have a short countdown (<strong>8 seconds</strong>) next to each rating. Please don't overthink — trust your gut.</p><p>The scale runs from <strong>1 = Not at all appealing</strong> to <strong>7 = Extremely appealing</strong>.</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>[WARM-UP PLACEHOLDER]</strong></p><p><em>(Warm-up rating — add manually after import using Qualtrics Conjoint module, 1 profile, with timer JS attached.)</em></p><p>Attach <code>javascript/timer-high-pressure.js</code> to the warm-up Conjoint question (high-pressure branch only) and set embedded data <code>warmup_discarded = true</code> on submit.</p>",
+        "DataExportTag": "Q4a_warmup_note",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q4a_warmup_note",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID9",
+        "QuestionText_Unsafe": "<p><strong>[WARM-UP PLACEHOLDER]</strong></p><p><em>(Warm-up rating — add manually after import using Qualtrics Conjoint module, 1 profile, with timer JS attached.)</em></p><p>Attach <code>javascript/timer-high-pressure.js</code> to the warm-up Conjoint question (high-pressure branch only) and set embedded data <code>warmup_discarded = true</code> on submit.</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>Imagine you are in the CLSBE cafeteria at lunchtime.</strong></p><p>Please <strong>take your time</strong> to evaluate each option carefully. There is no time limit — we want your considered judgment.</p><p>The scale runs from <strong>1 = Not at all appealing</strong> to <strong>7 = Extremely appealing</strong>.</p>",
+        "DataExportTag": "Q4b_1",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q4b_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID10",
+        "QuestionText_Unsafe": "<p><strong>Imagine you are in the CLSBE cafeteria at lunchtime.</strong></p><p>Please <strong>take your time</strong> to evaluate each option carefully. There is no time limit — we want your considered judgment.</p><p>The scale runs from <strong>1 = Not at all appealing</strong> to <strong>7 = Extremely appealing</strong>.</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID11",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>[WARM-UP PLACEHOLDER]</strong></p><p><em>(Warm-up rating — add manually after import using Qualtrics Conjoint module, 1 profile, no timer.)</em></p><p>Set embedded data <code>warmup_discarded = true</code> on submit.</p>",
+        "DataExportTag": "Q4b_warmup_note",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q4b_warmup_note",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID11",
+        "QuestionText_Unsafe": "<p><strong>[WARM-UP PLACEHOLDER]</strong></p><p><em>(Warm-up rating — add manually after import using Qualtrics Conjoint module, 1 profile, no timer.)</em></p><p>Set embedded data <code>warmup_discarded = true</code> on submit.</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>[CONJOINT PLACEHOLDER — HIGH PRESSURE]</strong></p><p>Add a Qualtrics <strong>Conjoint</strong> question here per <code>qualtrics/blocks/05-rating-task.md</code> and <code>qualtrics/conjoint-spec.json</code>. Key settings:</p><ul><li><strong>Mode:</strong> Full-profile, rating</li><li><strong>Profiles per respondent:</strong> 12</li><li><strong>Rating scale:</strong> 1–7 Likert, anchors \"Not at all appealing\" / \"Extremely appealing\"</li><li><strong>Attributes:</strong> Format (Separate items, Bundle); Label (None, Menu Deal, Student Fuel); Composition (Sandwich + Water, Sandwich + Coffee, Sandwich + Coffee + Fruit); Price (3.50, 4.50, 5.50, 6.50); Pickup speed (Ready now, 2-minute wait); Packaging (Open tray, Closed container)</li><li><strong>Randomization:</strong> independent uniform per attribute; no-replacement within respondent</li><li><strong>Force response:</strong> ON per rating</li><li><strong>Back button:</strong> OFF (set in Block Options)</li></ul><p><strong>JavaScript to paste on the Conjoint question (Question JS):</strong></p><ul><li><code>qualtrics/javascript/timer-high-pressure.js</code> (loads only if pressure == high)</li><li><code>qualtrics/javascript/response-time.js</code> (always; writes rt_ms_{loopIndex})</li></ul>",
+        "DataExportTag": "Q5a_placeholder",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q5a_placeholder",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID12",
+        "QuestionText_Unsafe": "<p><strong>[CONJOINT PLACEHOLDER — HIGH PRESSURE]</strong></p><p>Add a Qualtrics <strong>Conjoint</strong> question here per <code>qualtrics/blocks/05-rating-task.md</code> and <code>qualtrics/conjoint-spec.json</code>. Key settings:</p><ul><li><strong>Mode:</strong> Full-profile, rating</li><li><strong>Profiles per respondent:</strong> 12</li><li><strong>Rating scale:</strong> 1–7 Likert, anchors \"Not at all appealing\" / \"Extremely appealing\"</li><li><strong>Attributes:</strong> Format (Separate items, Bundle); Label (None, Menu Deal, Student Fuel); Composition (Sandwich + Water, Sandwich + Coffee, Sandwich + Coffee + Fruit); Price (3.50, 4.50, 5.50, 6.50); Pickup speed (Ready now, 2-minute wait); Packaging (Open tray, Closed container)</li><li><strong>Randomization:</strong> independent uniform per attribute; no-replacement within respondent</li><li><strong>Force response:</strong> ON per rating</li><li><strong>Back button:</strong> OFF (set in Block Options)</li></ul><p><strong>JavaScript to paste on the Conjoint question (Question JS):</strong></p><ul><li><code>qualtrics/javascript/timer-high-pressure.js</code> (loads only if pressure == high)</li><li><code>qualtrics/javascript/response-time.js</code> (always; writes rt_ms_{loopIndex})</li></ul>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID13",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>[CONJOINT PLACEHOLDER — LOW PRESSURE]</strong></p><p>Add a Qualtrics <strong>Conjoint</strong> question here per <code>qualtrics/blocks/05-rating-task.md</code> and <code>qualtrics/conjoint-spec.json</code>. Same attribute/level matrix as 05a.</p><ul><li><strong>Mode:</strong> Full-profile, rating, 12 profiles, 1–7 scale</li><li><strong>No timer</strong> — this is the low-pressure branch.</li><li><strong>Force response:</strong> ON per rating</li><li><strong>Back button:</strong> OFF (set in Block Options)</li></ul><p><strong>JavaScript to paste on the Conjoint question (Question JS):</strong></p><ul><li><code>qualtrics/javascript/response-time.js</code> (always; writes rt_ms_{loopIndex})</li></ul>",
+        "DataExportTag": "Q5b_placeholder",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q5b_placeholder",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID13",
+        "QuestionText_Unsafe": "<p><strong>[CONJOINT PLACEHOLDER — LOW PRESSURE]</strong></p><p>Add a Qualtrics <strong>Conjoint</strong> question here per <code>qualtrics/blocks/05-rating-task.md</code> and <code>qualtrics/conjoint-spec.json</code>. Same attribute/level matrix as 05a.</p><ul><li><strong>Mode:</strong> Full-profile, rating, 12 profiles, 1–7 scale</li><li><strong>No timer</strong> — this is the low-pressure branch.</li><li><strong>Force response:</strong> ON per rating</li><li><strong>Back button:</strong> OFF (set in Block Options)</li></ul><p><strong>JavaScript to paste on the Conjoint question (Question JS):</strong></p><ul><li><code>qualtrics/javascript/response-time.js</code> (always; writes rt_ms_{loopIndex})</li></ul>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID14",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>While rating the meal options, I felt rushed.</em>",
+        "DataExportTag": "Q6_1",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q6_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID14",
+        "QuestionText_Unsafe": "<em>While rating the meal options, I felt rushed.</em>",
+        "SubSelector": "SingleAnswer",
+        "Choices": {
+          "1": {
+            "Display": "While rating the meal options, I felt rushed."
+          }
+        },
+        "ChoiceOrder": [
+          1
+        ],
+        "Answers": {
+          "1": {
+            "Display": "1 - Strongly disagree"
+          },
+          "2": {
+            "Display": "2"
+          },
+          "3": {
+            "Display": "3"
+          },
+          "4": {
+            "Display": "4"
+          },
+          "5": {
+            "Display": "5"
+          },
+          "6": {
+            "Display": "6"
+          },
+          "7": {
+            "Display": "7 - Strongly agree"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "NextChoiceId": 2,
+        "NextAnswerId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID15",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>Imagine you are designing your ideal lunch at the CLSBE campus cafeteria — sandwich plus any sides and drinks you want. What is the maximum (in €) you would pay for it?</em>",
+        "DataExportTag": "Q6_2",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q6_2",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "ContentType",
+            "ContentType": "ValidNumber",
+            "ValidNumber": {
+              "Min": "0",
+              "Max": "50"
+            }
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID15",
+        "QuestionText_Unsafe": "<em>Imagine you are designing your ideal lunch at the CLSBE campus cafeteria — sandwich plus any sides and drinks you want. What is the maximum (in €) you would pay for it?</em>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID16",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>How realistic did the meal options you just rated feel, compared to real CLSBE cafeteria offerings?</em>",
+        "DataExportTag": "Q6_3",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q6_3",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID16",
+        "QuestionText_Unsafe": "<em>How realistic did the meal options you just rated feel, compared to real CLSBE cafeteria offerings?</em>",
+        "SubSelector": "SingleAnswer",
+        "Choices": {
+          "1": {
+            "Display": "How realistic did the meal options you just rated feel, compared to real CLSBE cafeteria offerings?"
+          }
+        },
+        "ChoiceOrder": [
+          1
+        ],
+        "Answers": {
+          "1": {
+            "Display": "1 - Not at all realistic"
+          },
+          "2": {
+            "Display": "2"
+          },
+          "3": {
+            "Display": "3"
+          },
+          "4": {
+            "Display": "4"
+          },
+          "5": {
+            "Display": "5"
+          },
+          "6": {
+            "Display": "6"
+          },
+          "7": {
+            "Display": "7 - Extremely realistic"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "NextChoiceId": 2,
+        "NextAnswerId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID17",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>In one or two sentences, what do you think this study was investigating?</em> (Optional, 500 characters max.)",
+        "DataExportTag": "Q6_4",
+        "QuestionType": "TE",
+        "Selector": "ESTB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q6_4",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "MaxCharacters",
+            "MaxChars": "500"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID17",
+        "QuestionText_Unsafe": "<em>In one or two sentences, what do you think this study was investigating?</em> (Optional, 500 characters max.)"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID18",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>What is your gender?</em>",
+        "DataExportTag": "Q7_1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q7_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID18",
+        "QuestionText_Unsafe": "<em>What is your gender?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Woman"
+          },
+          "2": {
+            "Display": "Man"
+          },
+          "3": {
+            "Display": "Non-binary"
+          },
+          "4": {
+            "Display": "Prefer not to say"
+          },
+          "5": {
+            "Display": "Prefer to self-describe:",
+            "TextEntry": "true",
+            "TextEntrySize": "Small"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "NextChoiceId": 6
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID19",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>What is your age?</em>",
+        "DataExportTag": "Q7_2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q7_2",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID19",
+        "QuestionText_Unsafe": "<em>What is your age?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Under 18"
+          },
+          "2": {
+            "Display": "18–20"
+          },
+          "3": {
+            "Display": "21–23"
+          },
+          "4": {
+            "Display": "24–26"
+          },
+          "5": {
+            "Display": "27–29"
+          },
+          "6": {
+            "Display": "30+"
+          },
+          "7": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "NextChoiceId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID20",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>What is your current year of study at CLSBE?</em>",
+        "DataExportTag": "Q7_3",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q7_3",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID20",
+        "QuestionText_Unsafe": "<em>What is your current year of study at CLSBE?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Undergraduate Year 1"
+          },
+          "2": {
+            "Display": "Undergraduate Year 2"
+          },
+          "3": {
+            "Display": "Undergraduate Year 3"
+          },
+          "4": {
+            "Display": "Master Year 1"
+          },
+          "5": {
+            "Display": "Master Year 2"
+          },
+          "6": {
+            "Display": "PhD"
+          },
+          "7": {
+            "Display": "Exchange student"
+          },
+          "8": {
+            "Display": "Not currently a CLSBE student"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "NextChoiceId": 9
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID21",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>What is your nationality?</em>",
+        "DataExportTag": "Q7_4",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q7_4",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID21",
+        "QuestionText_Unsafe": "<em>What is your nationality?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Portuguese"
+          },
+          "2": {
+            "Display": "EU (non-Portuguese)"
+          },
+          "3": {
+            "Display": "Non-EU"
+          },
+          "4": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "NextChoiceId": 5
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID22",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>Roughly how much money do you have available for discretionary spending (food, entertainment, etc.) per month?</em>",
+        "DataExportTag": "Q7_5",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q7_5",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID22",
+        "QuestionText_Unsafe": "<em>Roughly how much money do you have available for discretionary spending (food, entertainment, etc.) per month?</em>",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": {
+            "Display": "Under €100"
+          },
+          "2": {
+            "Display": "€100–€199"
+          },
+          "3": {
+            "Display": "€200–€349"
+          },
+          "4": {
+            "Display": "€350–€549"
+          },
+          "5": {
+            "Display": "€550–€799"
+          },
+          "6": {
+            "Display": "€800+"
+          },
+          "7": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "NextChoiceId": 8
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID23",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>For quality control, please answer the items below as instructed.</em>",
+        "DataExportTag": "Q8_1",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q8_1",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID23",
+        "QuestionText_Unsafe": "<em>For quality control, please answer the items below as instructed.</em>",
+        "SubSelector": "SingleAnswer",
+        "Choices": {
+          "1": {
+            "Display": "Eating a balanced lunch can improve afternoon focus."
+          },
+          "2": {
+            "Display": "<strong>For quality control, please select \"Strongly agree\" for this item.</strong>"
+          },
+          "3": {
+            "Display": "The CLSBE cafeteria offers daily meal options."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Answers": {
+          "1": {
+            "Display": "Strongly disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neutral"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly agree"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "NextChoiceId": 4,
+        "NextAnswerId": 6
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID24",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><strong>Thank you!</strong> You have completed the main part of the study.</p><p><strong>What this study was about:</strong> We are testing how students evaluate campus meal offers. Specifically, we randomize the <strong>bundle format</strong> (single bundle vs. separate items), the <strong>label</strong> shown on the offer (none, generic \"Menu Deal\", or benefit-oriented \"Student Fuel\"), the <strong>composition</strong>, and the <strong>price</strong>. Half of respondents completed the survey under a short time limit, to test whether time pressure changes how much those labels and bundles matter.</p><p>If you have any questions or would like to know the results, please email max.noelle-wying [at] edu.ulisboa.pt.</p>",
+        "DataExportTag": "Q8_2",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Q8_2",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID24",
+        "QuestionText_Unsafe": "<p><strong>Thank you!</strong> You have completed the main part of the study.</p><p><strong>What this study was about:</strong> We are testing how students evaluate campus meal offers. Specifically, we randomize the <strong>bundle format</strong> (single bundle vs. separate items), the <strong>label</strong> shown on the offer (none, generic \"Menu Deal\", or benefit-oriented \"Student Fuel\"), the <strong>composition</strong>, and the <strong>price</strong>. Half of respondents completed the survey under a short time limit, to test whether time pressure changes how much those labels and bundles matter.</p><p>If you have any questions or would like to know the results, please email max.noelle-wying [at] edu.ulisboa.pt.</p>"
+      }
+    },
+    {
+      "SurveyID": "SV_clsbe_cre_group3",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID25",
+      "SecondaryAttribute": "",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<em>To enter the €20 Bolt Food voucher lottery (5 winners), please leave your email. We will use it only to contact winners and delete it afterwards.</em>",
+        "DataExportTag": "lottery_email",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "lottery_email",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "ContentType",
+            "ContentType": "Email"
+          }
+        },
+        "Language": [],
+        "QuestionID": "QID25",
+        "QuestionText_Unsafe": "<em>To enter the €20 Bolt Food voucher lottery (5 winners), please leave your email. We will use it only to contact winners and delete it afterwards.</em>"
+      }
+    }
+  ]
+}

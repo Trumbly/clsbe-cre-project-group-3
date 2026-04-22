@@ -652,14 +652,6 @@
     },
     {
       "SurveyID": "SV_CLSBECREGROUP03",
-      "Element": "SCO",
-      "PrimaryAttribute": "Scoring",
-      "SecondaryAttribute": null,
-      "TertiaryAttribute": null,
-      "Payload": {}
-    },
-    {
-      "SurveyID": "SV_CLSBECREGROUP03",
       "Element": "PROJ",
       "PrimaryAttribute": "CORE",
       "SecondaryAttribute": null,

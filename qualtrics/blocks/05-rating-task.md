@@ -6,9 +6,11 @@ not expose the Conjoint question type, so the rating task is implemented via
 
 ## Profile pool
 
-- `qualtrics/profiles/profile-pool.csv` — 288 rows, full factorial of the six
-  attributes. Generated deterministically by
+- `qualtrics/profiles/profile-pool.csv` — 48 rows, balanced fractional
+  factorial of the six attributes. Generated deterministically by
   `qualtrics/scripts/generate-profile-pool.py`; no randomness, reproducible.
+  Main-effect balance is exact; Format × Label is exactly balanced (8 rows
+  per cell) to identify H5.
 - Columns: `ProfileID`, `Format`, `Label`, `Composition`, `Price`,
   `PickupSpeed`, `Packaging`.
 
@@ -46,7 +48,7 @@ Both are wired into the respective pressure branches in the Survey Flow.
    - Field 8 → `ImageURL`
 5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
    respondent in random order.
-6. **Present only:** 12 (of 288).
+6. **Present only:** 12 (of 48).
 
 Repeat for block `05b`.
 
@@ -101,7 +103,7 @@ Block `05a` additionally attaches `javascript/timer-high-pressure.js` after
 
 ## Why this is equivalent to Conjoint for identification
 
-- Attribute levels are independently and uniformly distributed across the 288
+- Attribute levels are independently and uniformly distributed across the 48
   profiles by construction.
 - "Random order, 12 iterations, no replacement within respondent" reproduces
   the same per-respondent sampling distribution that the Conjoint module would

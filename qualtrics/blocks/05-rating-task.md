@@ -43,6 +43,7 @@ Both are wired into the respective pressure branches in the Survey Flow.
    - Field 5 → `Price`
    - Field 6 → `PickupSpeed`
    - Field 7 → `Packaging`
+   - Field 8 → `ImageURL`
 5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
    respondent in random order.
 6. **Present only:** 12 (of 288).
@@ -57,6 +58,7 @@ the current profile's attributes via piped loop-merge fields.
 **Question body** — render as rich text (HTML mode):
 
 ```
+<img src="${lm://Field/8}" style="max-width:320px;display:block;margin:0 auto 16px;">
 <p><strong>Meal option ${lm://Field/1}</strong></p>
 <p>Format: ${lm://Field/2}<br>
 Composition: ${lm://Field/4}<br>

@@ -37,22 +37,6 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SPEC_PATH = REPO_ROOT / "qualtrics" / "conjoint-spec.json"
 OUT_PATH = REPO_ROOT / "qualtrics" / "profiles" / "profile-pool.csv"
 
-IMG_BASE = (
-    "https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/"
-    "feature/qualtrics-survey/qualtrics/stimuli/img"
-)
-COMPOSITION_TO_FILENAME = {
-    "Sandwich + Water": "sandwich-water.png",
-    "Sandwich + Coffee": "sandwich-coffee.png",
-    "Sandwich + Coffee + Fruit": "sandwich-coffee-fruit.png",
-}
-
-
-def image_url(composition: str) -> str:
-    fn = COMPOSITION_TO_FILENAME[composition]
-    return f"{IMG_BASE}/{fn}"
-
-
 def build_rows(attrs: dict[str, list[str]]) -> list[list[str]]:
     fmt_levels = attrs["format"]
     lab_levels = attrs["label"]
@@ -79,7 +63,6 @@ def build_rows(attrs: dict[str, list[str]]) -> list[list[str]]:
                     price_levels[price_i],
                     pickup_levels[pickup_i],
                     packaging_levels[pack_i],
-                    image_url(comp_levels[comp_i]),
                 ])
                 profile_num += 1
     return rows
@@ -91,7 +74,7 @@ def main() -> None:
 
     columns = [
         "ProfileID", "Format", "Label", "Composition",
-        "Price", "PickupSpeed", "Packaging", "ImageURL",
+        "Price", "PickupSpeed", "Packaging",
     ]
 
     rows = build_rows(attrs)

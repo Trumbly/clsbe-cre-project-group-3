@@ -1,49 +1,49 @@
-ProfileID,Format,Label,Composition,Price,PickupSpeed,Packaging,ImageURL
-P001,Separate items,None,Sandwich + Water,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P002,Separate items,None,Sandwich + Coffee,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P003,Separate items,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P004,Separate items,None,Sandwich + Water,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P005,Separate items,None,Sandwich + Coffee,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P006,Separate items,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P007,Separate items,None,Sandwich + Water,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P008,Separate items,None,Sandwich + Coffee,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P009,Separate items,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P010,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P011,Separate items,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P012,Separate items,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P013,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P014,Separate items,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P015,Separate items,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P016,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P017,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P018,Separate items,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P019,Separate items,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P020,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P021,Separate items,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P022,Separate items,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P023,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P024,Separate items,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P025,Bundle,None,Sandwich + Water,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P026,Bundle,None,Sandwich + Coffee,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P027,Bundle,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P028,Bundle,None,Sandwich + Water,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P029,Bundle,None,Sandwich + Coffee,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P030,Bundle,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P031,Bundle,None,Sandwich + Water,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P032,Bundle,None,Sandwich + Coffee,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P033,Bundle,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P034,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P035,Bundle,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P036,Bundle,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P037,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P038,Bundle,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P039,Bundle,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P040,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P041,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P042,Bundle,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P043,Bundle,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P044,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P045,Bundle,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
-P046,Bundle,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee.png
-P047,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-coffee-fruit.png
-P048,Bundle,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container,https://raw.githubusercontent.com/Trumbly/clsbe-cre-project-group-3/feature/qualtrics-survey/qualtrics/stimuli/img/sandwich-water.png
+ProfileID,Format,Label,Composition,Price,PickupSpeed,Packaging
+P001,Separate items,None,Sandwich + Water,3.50,Ready now,Open tray
+P002,Separate items,None,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P003,Separate items,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P004,Separate items,None,Sandwich + Water,6.50,2-minute wait,Closed container
+P005,Separate items,None,Sandwich + Coffee,3.50,Ready now,Open tray
+P006,Separate items,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P007,Separate items,None,Sandwich + Water,5.50,Ready now,Closed container
+P008,Separate items,None,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P009,Separate items,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray
+P010,Separate items,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P011,Separate items,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container
+P012,Separate items,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P013,Separate items,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P014,Separate items,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray
+P015,Separate items,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container
+P016,Separate items,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P017,Separate items,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P018,Separate items,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray
+P019,Separate items,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container
+P020,Separate items,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P021,Separate items,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray
+P022,Separate items,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P023,Separate items,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P024,Separate items,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container
+P025,Bundle,None,Sandwich + Water,3.50,Ready now,Open tray
+P026,Bundle,None,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P027,Bundle,None,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P028,Bundle,None,Sandwich + Water,6.50,2-minute wait,Closed container
+P029,Bundle,None,Sandwich + Coffee,3.50,Ready now,Open tray
+P030,Bundle,None,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P031,Bundle,None,Sandwich + Water,5.50,Ready now,Closed container
+P032,Bundle,None,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P033,Bundle,Menu Deal,Sandwich + Coffee,3.50,Ready now,Open tray
+P034,Bundle,Menu Deal,Sandwich + Coffee + Fruit,4.50,2-minute wait,Open tray
+P035,Bundle,Menu Deal,Sandwich + Water,5.50,Ready now,Closed container
+P036,Bundle,Menu Deal,Sandwich + Coffee,6.50,2-minute wait,Closed container
+P037,Bundle,Menu Deal,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P038,Bundle,Menu Deal,Sandwich + Water,4.50,2-minute wait,Open tray
+P039,Bundle,Menu Deal,Sandwich + Coffee,5.50,Ready now,Closed container
+P040,Bundle,Menu Deal,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P041,Bundle,Student Fuel,Sandwich + Coffee + Fruit,3.50,Ready now,Open tray
+P042,Bundle,Student Fuel,Sandwich + Water,4.50,2-minute wait,Open tray
+P043,Bundle,Student Fuel,Sandwich + Coffee,5.50,Ready now,Closed container
+P044,Bundle,Student Fuel,Sandwich + Coffee + Fruit,6.50,2-minute wait,Closed container
+P045,Bundle,Student Fuel,Sandwich + Water,3.50,Ready now,Open tray
+P046,Bundle,Student Fuel,Sandwich + Coffee,4.50,2-minute wait,Open tray
+P047,Bundle,Student Fuel,Sandwich + Coffee + Fruit,5.50,Ready now,Closed container
+P048,Bundle,Student Fuel,Sandwich + Water,6.50,2-minute wait,Closed container

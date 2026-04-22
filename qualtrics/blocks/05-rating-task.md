@@ -45,7 +45,12 @@ Both are wired into the respective pressure branches in the Survey Flow.
    - Field 5 → `Price`
    - Field 6 → `PickupSpeed`
    - Field 7 → `Packaging`
-   - Field 8 → `ImageURL`
+
+   The image URL is **not** a CSV column — it is injected at runtime by
+   `javascript/inject-composition-image.js`, which maps Field 4 (Composition)
+   to the appropriate PNG in `qualtrics/stimuli/img/`. Keeping the URL out of
+   the CSV avoids redundant storage and keeps the Qualtrics L&M grid fast to
+   save.
 5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
    respondent in random order.
 6. **Present only:** 12 (of 48).
@@ -60,7 +65,6 @@ the current profile's attributes via piped loop-merge fields.
 **Question body** — render as rich text (HTML mode):
 
 ```
-<img src="${lm://Field/8}" style="max-width:320px;display:block;margin:0 auto 16px;">
 <p><strong>Meal option ${lm://Field/1}</strong></p>
 <p>Format: ${lm://Field/2}<br>
 Composition: ${lm://Field/4}<br>
@@ -70,6 +74,9 @@ Packaging: ${lm://Field/7}</p>
 <p><strong>Price: €${lm://Field/5}</strong></p>
 <p><em>How appealing is this meal option to you right now?</em></p>
 ```
+
+The image is prepended to this block at runtime by
+`javascript/inject-composition-image.js`.
 
 If "Label: None" reads awkwardly, add a small JS snippet to hide that line
 when the value is "None":
@@ -89,12 +96,15 @@ appealing" (7). Force response ON.
 
 ## Question JavaScript attached
 
-Both blocks attach `javascript/response-time.js`. Loop & Merge exposes the
-current iteration as `${lm://CurrentLoopNumber}` — already the default token
-used in that file.
+Both blocks attach, in this order:
+
+1. `javascript/inject-composition-image.js` — reads Field 4 and prepends the
+   composition image.
+2. `javascript/response-time.js` — captures per-profile RT. Loop & Merge
+   exposes the current iteration as `${lm://CurrentLoopNumber}`.
 
 Block `05a` additionally attaches `javascript/timer-high-pressure.js` after
-`response-time.js`. Timer behavior is unchanged from the original spec.
+the two shared scripts. Timer behavior is unchanged from the original spec.
 
 ## Block options
 

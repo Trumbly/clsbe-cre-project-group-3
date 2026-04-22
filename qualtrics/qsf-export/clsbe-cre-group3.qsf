@@ -4,7 +4,7 @@
     "SurveyName": "CLSBE-CRE-Group3-BundleFraming-2026",
     "SurveyDescription": "CLSBE CRE Group 3 — Bundle/Framing study, 2026",
     "SurveyOwnerID": "UR_CLSBECREGROUP03",
-    "SurveyBrandID": "",
+    "SurveyBrandID": "placeholder",
     "DivisionID": null,
     "SurveyLanguage": "EN",
     "SurveyActiveResponseSet": "RS_CLSBECREGROUP03",
@@ -656,14 +656,7 @@
       "PrimaryAttribute": "Scoring",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
-      "Payload": {
-        "ScoringCategories": [],
-        "ScoringCategoryIDs": [],
-        "ScoringSummaryCategory": "",
-        "ScoringSummaryAfterQuestions": 0,
-        "ScoringSummaryAfterSurvey": 0,
-        "AutoScoringEnabled": 0
-      }
+      "Payload": {}
     },
     {
       "SurveyID": "SV_CLSBECREGROUP03",
@@ -1419,9 +1412,7 @@
         "Validation": {
           "Settings": {
             "ForceResponse": "OFF",
-            "Type": "CharRange",
-            "MaxChars": "500",
-            "MinChars": "0"
+            "Type": "None"
           }
         },
         "Language": [],

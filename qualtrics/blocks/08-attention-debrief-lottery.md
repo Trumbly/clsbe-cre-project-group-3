@@ -25,7 +25,7 @@ Qualtrics.SurveyEngine.addOnPageSubmit(function () {
 ### Q8.2 — Debrief (Descriptive Text)
 > **Thank you!** You have completed the main part of the study.
 >
-> **What this study was about:** We are testing how students evaluate campus meal offers. Specifically, we randomize the **bundle format** (single bundle vs. separate items), the **label** shown on the offer (none, generic "Menu Deal", or benefit-oriented "Student Fuel"), the **composition**, and the **price**. Half of respondents completed the survey under a short time limit, to test whether time pressure changes how much those labels and bundles matter.
+> **What this study was about:** We are testing how students evaluate campus meal offers. Specifically, we randomize the **bundle format** (single bundle vs. separate items), the **label** shown on the offer (none, generic "Menu Deal", or benefit-oriented "Student Deal"), the **composition**, and the **price**. Half of respondents completed the survey under a short time limit, to test whether time pressure changes how much those labels and bundles matter.
 >
 > If you have any questions or would like to know the results, please email max.noelle-wying [at] edu.ulisboa.pt.
 

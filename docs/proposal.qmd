@@ -56,7 +56,7 @@ Product bundling — the practice of selling two or more separate items together
 
 ## Label and Framing Effects
 
-The marketing literature has long documented that verbal framing influences evaluation even when objective content is held constant [@levin1998]. In food and menu contexts, specifically, descriptive and benefit-oriented labels raise purchase intent, perceived taste, and willingness to pay [@wansink2005; @irmak2011]. Our design introduces a novel three-level comparison: no label, a generic categorical label ("Menu Deal"), and a benefit-oriented label ("Student Fuel"). This allows us to separate the effect of *any* label from the effect of label *content*.
+The marketing literature has long documented that verbal framing influences evaluation even when objective content is held constant [@levin1998]. In food and menu contexts, specifically, descriptive and benefit-oriented labels raise purchase intent, perceived taste, and willingness to pay [@wansink2005; @irmak2011]. Our design introduces a novel three-level comparison: no label, a generic categorical label ("Menu Deal"), and a benefit-oriented label ("Student Deal"). This allows us to separate the effect of *any* label from the effect of label *content*.
 
 ## Conjoint Analysis as Causal Inference
 
@@ -70,7 +70,7 @@ A known threat to conjoint validity is the possibility that respondents infer th
 
 ## Time Pressure and Dual-Process Theory
 
-Under cognitive load, decision-makers shift from effortful (systematic/central) processing toward heuristic (peripheral) processing [@chaiken1980; @petty1986]. Empirically, time pressure has been shown to amplify the weight of peripheral cues — brand, visual salience, framing labels — relative to substantive product information [@dhar1999; @payne1988; @suri2003]. In the meal-choice context, a visible "Student Fuel" label or a "Menu Deal" badge functions as a heuristic cue: low cognitive effort to process, high perceived diagnosticity. We therefore predict that time pressure will amplify the AMCEs of label framing and bundle format, while dampening or leaving unchanged the effects of attributes that require more integrative evaluation (composition, price).
+Under cognitive load, decision-makers shift from effortful (systematic/central) processing toward heuristic (peripheral) processing [@chaiken1980; @petty1986]. Empirically, time pressure has been shown to amplify the weight of peripheral cues — brand, visual salience, framing labels — relative to substantive product information [@dhar1999; @payne1988; @suri2003]. In the meal-choice context, a visible "Student Deal" label or a "Menu Deal" badge functions as a heuristic cue: low cognitive effort to process, high perceived diagnosticity. We therefore predict that time pressure will amplify the AMCEs of label framing and bundle format, while dampening or leaving unchanged the effects of attributes that require more integrative evaluation (composition, price).
 
 # Hypotheses
 
@@ -78,7 +78,7 @@ We formulate seven pre-registered hypotheses. Because our primary outcome is an 
 
 - **H1 — Bundle format effect.** The bundle format has a positive effect on appeal ratings relative to separate items.
 - **H2a — Label presence effect.** Any label (generic or benefit-oriented) has a positive effect relative to no label.
-- **H2b — Label content effect.** The benefit-oriented label ("Student Fuel") has a positive effect relative to the generic label ("Menu Deal").
+- **H2b — Label content effect.** The benefit-oriented label ("Student Deal") has a positive effect relative to the generic label ("Menu Deal").
 - **H3 — Price effect.** Price has a negative, monotonically decreasing effect on ratings — a sanity check and the denominator for WTP estimation.
 - **H4 — Composition effect.** Richer compositions (e.g., sandwich + coffee + fruit) have positive effects relative to minimal compositions (sandwich + water), with diminishing returns.
 - **H5 — Bundle × Label interaction.** The bundle effect is amplified when paired with a benefit-oriented label, because the label provides a coherent narrative that justifies the bundle.
@@ -110,7 +110,7 @@ The design uses **four focal attributes** (of theoretical interest) and **two fi
 | Type | Attribute | Levels | Rationale |
 |---|---|---|---|
 | Focal | **Format** | Bundle / Separate items | Core manipulation (H1) |
-| Focal | **Label** | None / "Menu Deal" / "Student Fuel" | Tests label presence (H2a) and content (H2b) |
+| Focal | **Label** | None / "Menu Deal" / "Student Deal" | Tests label presence (H2a) and content (H2b) |
 | Focal | **Composition** | Sandwich + Water / Sandwich + Coffee / Sandwich + Coffee + Fruit | Realism and H4 |
 | Focal | **Price** | €3.50 / €4.50 / €5.50 / €6.50 | WTP estimation and H3 |
 | Filler | **Pickup speed** | Ready now / 2-minute wait | Realism, not of theoretical interest |
@@ -342,7 +342,7 @@ These limitations point to natural follow-up work: a field experiment at an actu
 | Type | Attribute | Levels | Reference Level |
 |---|---|---|---|
 | Focal | Format | Bundle, Separate | Separate |
-| Focal | Label | None, "Menu Deal", "Student Fuel" | None |
+| Focal | Label | None, "Menu Deal", "Student Deal" | None |
 | Focal | Composition | Sandwich + Water, Sandwich + Coffee, Sandwich + Coffee + Fruit | Sandwich + Water |
 | Focal | Price | €3.50, €4.50, €5.50, €6.50 | treated as continuous |
 | Filler | Pickup speed | Ready now, 2-minute wait | Ready now |
@@ -383,7 +383,7 @@ Both conditions then see a single warm-up rating task (discarded from analysis) 
 **Block 5 — Rating tasks [branched on timer display].** 12 sequential rating tasks. Each task shows one randomly generated meal profile with:
 
 - Product composite image (sandwich, optional coffee/water, optional fruit).
-- Label badge where present ("Menu Deal" or "Student Fuel"); no badge shown when level is "None".
+- Label badge where present ("Menu Deal" or "Student Deal"); no badge shown when level is "None".
 - Composition description in text below the image.
 - Pickup speed cue ("Ready now" or "2-minute wait") as a small icon.
 - Packaging cue ("Open tray" or "Closed container") as a small icon.

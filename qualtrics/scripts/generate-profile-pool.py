@@ -1,10 +1,14 @@
-"""Generate the deterministic full-factorial profile pool for the rating-based
-conjoint study. Reads attribute levels from ``qualtrics/conjoint-spec.json``
-and writes every attribute combination (2 x 3 x 3 x 4 x 2 x 2 = 288 rows) to
-``qualtrics/profiles/profile-pool.csv``.
+"""Generate the deterministic profile pool for the rating-based conjoint
+study. Reads attribute levels from ``qualtrics/conjoint-spec.json`` and
+writes attribute combinations to ``qualtrics/profiles/profile-pool.csv``.
+
+The pool is a full factorial (2 x 3 x 3 x 4 x 2 x 2 = 288) minus logically
+inconsistent cells: ``Format == "Separate items"`` can only carry
+``Label == "None"`` because "Menu Deal" and "Student Deal" are
+bundle-framing labels. This drops 96 rows, leaving 192 profiles.
 
 No randomness: running this script twice produces byte-identical output.
-Per-respondent randomization of 12 profiles out of 288 is done by Qualtrics
+Per-respondent randomization of 12 profiles out of 192 is done by Qualtrics
 Loop & Merge at runtime.
 
 The composition image URL is NOT stored in the CSV -- it is derived at
@@ -33,14 +37,17 @@ def main() -> None:
         "Price", "PickupSpeed", "Packaging",
     ]
 
-    combos = list(itertools.product(
-        attrs["format"],
-        attrs["label"],
-        attrs["composition"],
-        attrs["price"],
-        attrs["pickup_speed"],
-        attrs["packaging"],
-    ))
+    combos = [
+        c for c in itertools.product(
+            attrs["format"],
+            attrs["label"],
+            attrs["composition"],
+            attrs["price"],
+            attrs["pickup_speed"],
+            attrs["packaging"],
+        )
+        if not (c[0] == "Separate items" and c[1] != "None")
+    ]
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with OUT_PATH.open("w", newline="", encoding="utf-8") as f:

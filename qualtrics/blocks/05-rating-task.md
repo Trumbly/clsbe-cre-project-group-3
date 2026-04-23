@@ -6,17 +6,29 @@ not expose the Conjoint question type, so the rating task is implemented via
 
 ## Profile pool
 
-- `qualtrics/profiles/profile-pool.csv` — 288 rows, full factorial of the six
-  attributes. Generated deterministically by
+- `qualtrics/profiles/profile-pool.csv` — 192 rows, restricted factorial of
+  the six attributes (full 2×3×3×4×2×2 = 288 minus the 96 logically
+  inconsistent `Separate items × {Menu Deal, Student Deal}` cells).
+  Generated deterministically by
   `qualtrics/scripts/generate-profile-pool.py`; no randomness, reproducible.
 - Columns: `ProfileID`, `Format`, `Label`, `Composition`, `Price`,
   `PickupSpeed`, `Packaging`.
 
-The pool is fully balanced: every attribute level appears equally often, and
-every pair of attribute levels appears equally often. Drawing 12 rows uniformly
-at random from this pool preserves the identification assumptions of
-Hainmueller et al. (2014) for rating-based conjoint: attribute levels are
-independent across draws and uniformly distributed.
+Design constraint: "Menu Deal" and "Student Deal" are bundle-framing labels
+and only appear when `Format == Bundle`. `Separate items` always carries
+`Label == None`. Because of this restriction, `Format × Label` is **not**
+fully crossed: the Format and Label main effects are partially confounded
+in the marginal pool. Within `Format == Bundle`, Label is fully crossed
+with all other attributes, so the Label AMCE is identified conditional on
+Bundle; treat the offer as a 4-level factor {`Separate items`,
+`Bundle × None`, `Bundle × Menu Deal`, `Bundle × Student Deal`} in analysis
+to avoid extrapolating Label effects to Separate items.
+
+All other pairwise margins (Format × Composition, Label × Composition
+within Bundle, etc.) remain uniform by construction. Drawing 12 rows
+uniformly at random from this restricted pool preserves the identification
+assumptions of Hainmueller et al. (2014) for the attributes that remain
+independent across draws.
 
 ## Two parallel block copies
 
@@ -62,7 +74,7 @@ Both are wired into the respective pressure branches in the Survey Flow.
    the Qualtrics L&M grid fast to save.
 5. **Randomize loop order:** ON — Qualtrics draws 12 distinct rows per
    respondent in random order.
-6. **Present only:** 12 (of 288).
+6. **Present only:** 12 (of 192).
 
 Repeat for block `05b`.
 
@@ -122,19 +134,22 @@ the two shared scripts. Timer behavior is unchanged from the original spec.
 
 ## Why this is equivalent to Conjoint for identification
 
-- Attribute levels are independently and uniformly distributed across the 288
-  profiles by construction.
+- Attribute levels are uniformly distributed across the 192 profiles **subject
+  to the Format × Label logical constraint**. All other attributes remain
+  independent of Format, Label, and each other.
 - "Random order, 12 iterations, no replacement within respondent" reproduces
   the same per-respondent sampling distribution that the Conjoint module would
   have produced.
 - No carryover: each respondent sees 12 profiles drawn independently of other
   respondents.
 - The analysis model (lmer with respondent random intercepts, attribute-level
-  dummies) is identical to what the proposal specifies.
+  dummies) is essentially unchanged. Recommended tweak: code Format × Label
+  as a 4-level combined factor (reference = `Separate items`) so Label AMCEs
+  are estimated only where Label varies (within Bundle).
 
 The only loss compared to native Conjoint: no pre-registered orthogonal design
-matrix. We substitute a fully balanced full-factorial pool, which is actually
-stronger on balance.
+matrix, and Format × Label is constrained rather than orthogonal. All other
+attribute pairs are orthogonal by construction.
 
 ## Data export
 

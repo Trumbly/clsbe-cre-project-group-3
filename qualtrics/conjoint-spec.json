@@ -20,7 +20,7 @@
       "id": "label",
       "label": "Label",
       "type": "focal",
-      "levels": ["None", "Menu Deal", "Student Fuel"],
+      "levels": ["None", "Menu Deal", "Student Deal"],
       "reference": "None"
     },
     {
@@ -64,9 +64,9 @@
     "reference": "low",
     "assignment": "Qualtrics randomizer, equal probability"
   },
-  "profile_space_size": 288,
+  "profile_space_size": 192,
   "randomization": {
-    "strategy": "independent uniform sampling per attribute, no-replacement within respondent",
-    "constraints": "none at launch; pilot may flag implausible combinations"
+    "strategy": "uniform sampling from the 192-profile pool (full factorial minus logically inconsistent Format x Label cells), no-replacement within respondent",
+    "constraints": "Label in {Menu Deal, Student Deal} only permitted when Format == Bundle; Separate items always carries Label == None"
   }
 }
